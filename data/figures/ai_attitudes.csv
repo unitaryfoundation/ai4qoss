@@ -1,0 +1,25 @@
+group,topic_or_option,count,answered
+maintainer: prior AI use,I've been using it for a while now,6,10
+maintainer: prior AI use,I already had a policy place,5,10
+maintainer: prior AI use,Other,2,10
+maintainer: prior AI use,I don't really use,1,10
+maintainer: AI session,Yes,5,10
+maintainer: AI session,Depends,4,10
+maintainer: AI session,No,1,10
+maintainer: what the policy answer raises,wants a human in the loop,4,9
+maintainer: what the policy answer raises,review burden or time,3,9
+maintainer: what the policy answer raises,mentions a written policy,3,9
+maintainer: what the policy answer raises,quality of submissions,2,9
+maintainer: what the policy answer raises,hard to tell AI work apart,1,9
+maintainer: what the policy answer raises,disclosure or attribution,1,9
+maintainer: what the policy answer raises,contributor understanding of the PR,1,9
+maintainer: what the policy answer raises,AI got things wrong,1,9
+maintainer: unprompted,raises AI in general feedback,2,7
+hacker: what the AI answer raises,review burden or time,6,16
+hacker: what the AI answer raises,contributor understanding of the PR,6,16
+hacker: what the AI answer raises,AI helped them,5,16
+hacker: what the AI answer raises,quality of submissions,3,16
+hacker: what the AI answer raises,AI got things wrong,2,16
+hacker: what the AI answer raises,names a specific tool,1,16
+hacker: what the AI answer raises,mentions a written policy,1,16
+hacker: what the AI answer raises,disclosure or attribution,1,16

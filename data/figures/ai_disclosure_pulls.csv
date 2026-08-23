@@ -1,0 +1,210 @@
+project,group,quarter,pulls,any_signal,tool_marker,prose,bot_author,any_signal_pct
+Qiskit,quantum,2024Q1,459,0,0,0,0,0.0
+Qiskit,quantum,2024Q2,372,0,0,0,0,0.0
+Qiskit,quantum,2024Q3,402,0,0,0,0,0.0
+Qiskit,quantum,2024Q4,240,0,0,0,0,0.0
+Qiskit,quantum,2025Q1,382,0,0,0,0,0.0
+Qiskit,quantum,2025Q2,368,1,0,1,0,0.27
+Qiskit,quantum,2025Q3,311,1,0,1,0,0.32
+Qiskit,quantum,2025Q4,280,0,0,0,0,0.0
+Qiskit,quantum,2026Q1,339,2,0,2,0,0.59
+Qiskit,quantum,2026Q2,432,13,6,13,0,3.01
+Qiskit,quantum,2026Q3,204,3,1,3,0,1.47
+Qiskit Aer,quantum,2024Q1,35,0,0,0,0,0.0
+Qiskit Aer,quantum,2024Q2,44,0,0,0,0,0.0
+Qiskit Aer,quantum,2024Q3,28,0,0,0,0,0.0
+Qiskit Aer,quantum,2024Q4,11,0,0,0,0,0.0
+Qiskit Aer,quantum,2025Q1,25,0,0,0,0,0.0
+Qiskit Aer,quantum,2025Q2,5,0,0,0,0,0.0
+Qiskit Aer,quantum,2025Q3,10,0,0,0,0,0.0
+Qiskit Aer,quantum,2025Q4,5,0,0,0,0,0.0
+Qiskit Aer,quantum,2026Q1,11,0,0,0,0,0.0
+Qiskit Aer,quantum,2026Q2,19,0,0,0,0,0.0
+Qiskit Aer,quantum,2026Q3,3,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2024Q1,182,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2024Q2,113,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2024Q3,129,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2024Q4,93,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2025Q1,69,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2025Q2,48,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2025Q3,78,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2025Q4,75,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2026Q1,130,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2026Q2,162,0,0,0,0,0.0
+Qiskit IBM Runtime,quantum,2026Q3,155,0,0,0,0,0.0
+PennyLane,quantum,2024Q1,405,0,0,0,0,0.0
+PennyLane,quantum,2024Q2,369,0,0,0,0,0.0
+PennyLane,quantum,2024Q3,322,0,0,0,0,0.0
+PennyLane,quantum,2024Q4,383,0,0,0,0,0.0
+PennyLane,quantum,2025Q1,366,0,0,0,0,0.0
+PennyLane,quantum,2025Q2,452,0,0,0,0,0.0
+PennyLane,quantum,2025Q3,543,0,0,0,0,0.0
+PennyLane,quantum,2025Q4,427,0,0,0,0,0.0
+PennyLane,quantum,2026Q1,375,1,0,1,0,0.27
+PennyLane,quantum,2026Q2,448,6,0,6,0,1.34
+PennyLane,quantum,2026Q3,248,8,0,8,0,3.23
+PennyLane Lightning,quantum,2024Q1,79,0,0,0,0,0.0
+PennyLane Lightning,quantum,2024Q2,107,0,0,0,0,0.0
+PennyLane Lightning,quantum,2024Q3,135,0,0,0,0,0.0
+PennyLane Lightning,quantum,2024Q4,91,0,0,0,0,0.0
+PennyLane Lightning,quantum,2025Q1,81,0,0,0,0,0.0
+PennyLane Lightning,quantum,2025Q2,74,0,0,0,0,0.0
+PennyLane Lightning,quantum,2025Q3,71,0,0,0,0,0.0
+PennyLane Lightning,quantum,2025Q4,46,0,0,0,0,0.0
+PennyLane Lightning,quantum,2026Q1,40,0,0,0,0,0.0
+PennyLane Lightning,quantum,2026Q2,41,0,0,0,0,0.0
+PennyLane Lightning,quantum,2026Q3,17,0,0,0,0,0.0
+Cirq,quantum,2024Q1,100,0,0,0,0,0.0
+Cirq,quantum,2024Q2,81,0,0,0,0,0.0
+Cirq,quantum,2024Q3,63,0,0,0,0,0.0
+Cirq,quantum,2024Q4,121,0,0,0,0,0.0
+Cirq,quantum,2025Q1,257,0,0,0,0,0.0
+Cirq,quantum,2025Q2,213,0,0,0,0,0.0
+Cirq,quantum,2025Q3,177,0,0,0,0,0.0
+Cirq,quantum,2025Q4,118,0,0,0,0,0.0
+Cirq,quantum,2026Q1,155,1,0,1,0,0.65
+Cirq,quantum,2026Q2,143,0,0,0,0,0.0
+Cirq,quantum,2026Q3,89,0,0,0,0,0.0
+OpenFermion,quantum,2024Q1,12,0,0,0,0,0.0
+OpenFermion,quantum,2024Q2,9,0,0,0,0,0.0
+OpenFermion,quantum,2024Q3,5,0,0,0,0,0.0
+OpenFermion,quantum,2024Q4,2,0,0,0,0,0.0
+OpenFermion,quantum,2025Q1,109,0,0,0,0,0.0
+OpenFermion,quantum,2025Q2,53,0,0,0,0,0.0
+OpenFermion,quantum,2025Q3,54,0,0,0,0,0.0
+OpenFermion,quantum,2025Q4,39,0,0,0,0,0.0
+OpenFermion,quantum,2026Q1,61,0,0,0,0,0.0
+OpenFermion,quantum,2026Q2,115,1,0,1,0,0.87
+OpenFermion,quantum,2026Q3,37,0,0,0,0,0.0
+Stim,quantum,2024Q1,36,0,0,0,0,0.0
+Stim,quantum,2024Q2,21,0,0,0,0,0.0
+Stim,quantum,2024Q3,33,0,0,0,0,0.0
+Stim,quantum,2024Q4,11,0,0,0,0,0.0
+Stim,quantum,2025Q1,32,1,0,1,0,3.12
+Stim,quantum,2025Q2,29,0,0,0,0,0.0
+Stim,quantum,2025Q3,18,0,0,0,0,0.0
+Stim,quantum,2025Q4,9,1,1,1,0,11.11
+Stim,quantum,2026Q1,26,0,0,0,0,0.0
+Stim,quantum,2026Q2,26,0,0,0,0,0.0
+Stim,quantum,2026Q3,12,1,0,1,0,8.33
+QuTiP,quantum,2024Q1,62,0,0,0,0,0.0
+QuTiP,quantum,2024Q2,75,0,0,0,0,0.0
+QuTiP,quantum,2024Q3,34,0,0,0,0,0.0
+QuTiP,quantum,2024Q4,34,0,0,0,0,0.0
+QuTiP,quantum,2025Q1,54,0,0,0,0,0.0
+QuTiP,quantum,2025Q2,28,0,0,0,0,0.0
+QuTiP,quantum,2025Q3,36,0,0,0,0,0.0
+QuTiP,quantum,2025Q4,30,0,0,0,0,0.0
+QuTiP,quantum,2026Q1,44,1,0,1,0,2.27
+QuTiP,quantum,2026Q2,59,0,0,0,0,0.0
+QuTiP,quantum,2026Q3,38,0,0,0,0,0.0
+Mitiq,quantum,2024Q1,77,0,0,0,0,0.0
+Mitiq,quantum,2024Q2,100,0,0,0,0,0.0
+Mitiq,quantum,2024Q3,64,0,0,0,0,0.0
+Mitiq,quantum,2024Q4,74,0,0,0,0,0.0
+Mitiq,quantum,2025Q1,50,0,0,0,0,0.0
+Mitiq,quantum,2025Q2,65,0,0,0,0,0.0
+Mitiq,quantum,2025Q3,18,0,0,0,0,0.0
+Mitiq,quantum,2025Q4,57,0,0,0,0,0.0
+Mitiq,quantum,2026Q1,75,1,0,1,0,1.33
+Mitiq,quantum,2026Q2,80,3,1,3,0,3.75
+Mitiq,quantum,2026Q3,30,4,2,4,0,13.33
+tket,quantum,2024Q1,92,0,0,0,0,0.0
+tket,quantum,2024Q2,93,0,0,0,0,0.0
+tket,quantum,2024Q3,78,0,0,0,0,0.0
+tket,quantum,2024Q4,87,0,0,0,0,0.0
+tket,quantum,2025Q1,68,0,0,0,0,0.0
+tket,quantum,2025Q2,85,0,0,0,0,0.0
+tket,quantum,2025Q3,58,0,0,0,0,0.0
+tket,quantum,2025Q4,35,0,0,0,0,0.0
+tket,quantum,2026Q1,39,0,0,0,0,0.0
+tket,quantum,2026Q2,41,0,0,0,0,0.0
+tket,quantum,2026Q3,13,0,0,0,0,0.0
+numpy,mainstream,2024Q1,425,0,0,0,0,0.0
+numpy,mainstream,2024Q2,395,0,0,0,0,0.0
+numpy,mainstream,2024Q3,434,3,0,3,0,0.69
+numpy,mainstream,2024Q4,354,0,0,0,0,0.0
+numpy,mainstream,2025Q1,343,0,0,0,0,0.0
+numpy,mainstream,2025Q2,478,0,0,0,0,0.0
+numpy,mainstream,2025Q3,385,0,0,0,0,0.0
+numpy,mainstream,2025Q4,545,0,0,0,0,0.0
+numpy,mainstream,2026Q1,417,11,5,11,0,2.64
+numpy,mainstream,2026Q2,571,17,1,17,0,2.98
+numpy,mainstream,2026Q3,379,21,2,21,0,5.54
+scipy,mainstream,2024Q1,346,0,0,0,0,0.0
+scipy,mainstream,2024Q2,461,0,0,0,0,0.0
+scipy,mainstream,2024Q3,338,0,0,0,0,0.0
+scipy,mainstream,2024Q4,365,0,0,0,0,0.0
+scipy,mainstream,2025Q1,349,0,0,0,0,0.0
+scipy,mainstream,2025Q2,326,0,0,0,0,0.0
+scipy,mainstream,2025Q3,278,0,0,0,0,0.0
+scipy,mainstream,2025Q4,386,0,0,0,0,0.0
+scipy,mainstream,2026Q1,516,9,4,9,0,1.74
+scipy,mainstream,2026Q2,468,27,2,27,0,5.77
+scipy,mainstream,2026Q3,278,16,2,16,0,5.76
+matplotlib,mainstream,2024Q1,257,0,0,0,0,0.0
+matplotlib,mainstream,2024Q2,297,0,0,0,0,0.0
+matplotlib,mainstream,2024Q3,262,0,0,0,0,0.0
+matplotlib,mainstream,2024Q4,332,0,0,0,0,0.0
+matplotlib,mainstream,2025Q1,298,0,0,0,0,0.0
+matplotlib,mainstream,2025Q2,291,0,0,0,0,0.0
+matplotlib,mainstream,2025Q3,270,0,0,0,0,0.0
+matplotlib,mainstream,2025Q4,198,1,1,1,0,0.51
+matplotlib,mainstream,2026Q1,380,3,2,3,0,0.79
+matplotlib,mainstream,2026Q2,416,6,3,6,0,1.44
+matplotlib,mainstream,2026Q3,172,2,0,2,0,1.16
+pandas,mainstream,2024Q1,917,0,0,0,0,0.0
+pandas,mainstream,2024Q2,676,0,0,0,0,0.0
+pandas,mainstream,2024Q3,496,1,0,1,0,0.2
+pandas,mainstream,2024Q4,459,0,0,0,0,0.0
+pandas,mainstream,2025Q1,367,0,0,0,0,0.0
+pandas,mainstream,2025Q2,308,0,0,0,0,0.0
+pandas,mainstream,2025Q3,553,1,0,1,0,0.18
+pandas,mainstream,2025Q4,753,2,1,1,0,0.27
+pandas,mainstream,2026Q1,1207,226,214,13,0,18.72
+pandas,mainstream,2026Q2,975,329,321,13,0,33.74
+pandas,mainstream,2026Q3,505,33,28,5,0,6.53
+sympy,mainstream,2024Q1,227,0,0,0,0,0.0
+sympy,mainstream,2024Q2,157,0,0,0,0,0.0
+sympy,mainstream,2024Q3,201,0,0,0,0,0.0
+sympy,mainstream,2024Q4,159,0,0,0,0,0.0
+sympy,mainstream,2025Q1,259,0,0,0,0,0.0
+sympy,mainstream,2025Q2,204,0,0,0,0,0.0
+sympy,mainstream,2025Q3,148,0,0,0,0,0.0
+sympy,mainstream,2025Q4,296,1,1,1,0,0.34
+sympy,mainstream,2026Q1,570,32,0,32,0,5.61
+sympy,mainstream,2026Q2,250,25,0,25,0,10.0
+sympy,mainstream,2026Q3,190,33,3,33,0,17.37
+astropy,mainstream,2024Q1,351,0,0,0,0,0.0
+astropy,mainstream,2024Q2,277,0,0,0,0,0.0
+astropy,mainstream,2024Q3,355,0,0,0,0,0.0
+astropy,mainstream,2024Q4,395,0,0,0,0,0.0
+astropy,mainstream,2025Q1,291,0,0,0,0,0.0
+astropy,mainstream,2025Q2,297,0,0,0,0,0.0
+astropy,mainstream,2025Q3,204,0,0,0,0,0.0
+astropy,mainstream,2025Q4,353,0,0,0,0,0.0
+astropy,mainstream,2026Q1,328,1,0,1,0,0.3
+astropy,mainstream,2026Q2,414,4,4,4,0,0.97
+astropy,mainstream,2026Q3,183,10,0,10,0,5.46
+scikit-learn,mainstream,2024Q1,479,0,0,0,0,0.0
+scikit-learn,mainstream,2024Q2,403,0,0,0,0,0.0
+scikit-learn,mainstream,2024Q3,399,0,0,0,0,0.0
+scikit-learn,mainstream,2024Q4,381,0,0,0,0,0.0
+scikit-learn,mainstream,2025Q1,392,0,0,0,0,0.0
+scikit-learn,mainstream,2025Q2,415,1,0,1,0,0.24
+scikit-learn,mainstream,2025Q3,450,0,0,0,0,0.0
+scikit-learn,mainstream,2025Q4,532,0,0,0,0,0.0
+scikit-learn,mainstream,2026Q1,515,24,17,24,0,4.66
+scikit-learn,mainstream,2026Q2,579,8,1,8,0,1.38
+scikit-learn,mainstream,2026Q3,237,3,1,3,0,1.27
+networkx,mainstream,2024Q1,123,0,0,0,0,0.0
+networkx,mainstream,2024Q2,87,0,0,0,0,0.0
+networkx,mainstream,2024Q3,78,0,0,0,0,0.0
+networkx,mainstream,2024Q4,79,0,0,0,0,0.0
+networkx,mainstream,2025Q1,115,0,0,0,0,0.0
+networkx,mainstream,2025Q2,124,0,0,0,0,0.0
+networkx,mainstream,2025Q3,134,0,0,0,0,0.0
+networkx,mainstream,2025Q4,108,0,0,0,0,0.0
+networkx,mainstream,2026Q1,109,4,3,4,0,3.67
+networkx,mainstream,2026Q2,112,3,0,3,0,2.68
+networkx,mainstream,2026Q3,90,2,2,2,0,2.22

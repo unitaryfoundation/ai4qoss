@@ -1,0 +1,5 @@
+project,minor_releases,deprecations_total,breaking_total,deprecations_per_release,breaking_per_release,span_years,deprecations_per_year,releases_per_year
+PennyLane,42,166,339,3.95,8.07,6.9,24.1,6.1
+Qiskit,26,358,454,13.77,17.46,6.3,56.8,4.1
+numpy,28,105,132,3.75,4.71,9.5,11.0,2.2
+scipy,32,79,122,2.47,3.81,10.9,6.8,2.0
