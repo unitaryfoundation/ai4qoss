@@ -74,6 +74,37 @@ nothing leaves no trace in any of these files.
 Counts drawn from surveys rest on single digits. They describe the respondents and not
 the wider community.
 
+## Re-measurement
+
+The paper is a snapshot; these files are the part that can be brought forward. What we
+intend to re-run, and what is missing, is recorded here rather than in the paper so that
+it can be revised as it happens.
+
+| Measurement | Cadence | What changes it |
+|---|---|---|
+| `corpus_size.csv` | Annual | New framework releases, and consolidation of the ecosystem onto fewer libraries |
+| `api_survival.csv`, `api_churn_summary.csv` | Annual, on each project's latest stable release | Major releases; the 2021 baseline stays fixed so the series stays comparable |
+| `qubit_counts.csv`, `qubit_by_module.csv`, `circuit_kind.csv` | Annual | Growth of the test suites; adoption of checks that do not need full simulation |
+| `ai_disclosure_*.csv` | Quarterly | Projects adding or removing a disclosure field; tools changing what they write into a commit |
+| `task_pipeline_by_year.csv`, `task_solution_size.csv` | After each unitaryHACK event | The next event's bounty list |
+| `ai_attitudes.csv` | After each event that asks about AI | The survey instrument, which changed in 2026 when the AI questions were added |
+
+Three things are absent and would have to be collected rather than recomputed.
+
+Contributor retention. The surveys ask participants whether they intend to keep
+contributing; whether they did is not recorded anywhere. It can be reconstructed from
+each project's commit history without a survey, by checking whether a participant
+appears again in the following year.
+
+Fail-then-pass validation of the benchmark tasks. Until each reference test is shown to
+fail at the parent commit and pass after the change, the automatically scorable count is
+an upper bound. See [../benchmarks/](../benchmarks/).
+
+Direct evidence on model staleness. The interface-survival numbers say what fraction of
+an old API still imports, which bounds how wrong a model trained on that snapshot can
+be. What a model actually emits for a given framework version is a separate measurement
+and has not been made.
+
 ## Reproducing
 
 The scripts that produce these files, together with the full method and caveats for each
