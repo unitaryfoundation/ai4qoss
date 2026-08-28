@@ -103,7 +103,9 @@ an upper bound. See [../benchmarks/](../benchmarks/).
 Direct evidence on model staleness. The interface-survival numbers say what fraction of
 an old API still imports, which bounds how wrong a model trained on that snapshot can
 be. What a model actually emits for a given framework version is a separate measurement
-and has not been made.
+that we have not made; published work covering Qiskit 0.43, 1.3, and 2.0 reports
+pass@1 between 0.02 and 0.85 across 17 models
+([arXiv:2607.04072](https://arxiv.org/abs/2607.04072)).
 
 ## Reproducing
 

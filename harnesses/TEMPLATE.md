@@ -26,5 +26,8 @@ human approval points).
 
 ## Cost and results
 
-Rough numbers from actual runs: iterations to success, wall time, spend. Link to logs
-or examples if public.
+Numbers from your own runs where you have them: iterations to success, wall time,
+spend, with links to logs or examples if public. If the harness has not been run,
+say so in the first sentence, then give what is published about this task and what is
+not. Every number and every claim that a tool or practice works carries a link; a
+sentence without one can only report that a measurement does not exist.

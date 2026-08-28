@@ -14,7 +14,7 @@ citation stays stable while the content moves on.
 | Directory | Contents |
 |---|---|
 | [`standards/`](standards/) | Policy templates repos can copy: AI contribution disclosure and review, an AGENTS.md template, CI gate examples |
-| [`harnesses/`](harnesses/) | Recipe cards for agent harnesses: the task, the loop, the check the loop relies on, and the guardrails |
+| [`harnesses/`](harnesses/) | Designs for agent harnesses a project could build: the task, the loop, the check the loop relies on, and the guardrails. Cards, not code |
 | [`verifiers/`](verifiers/) | Catalog of verification tools for quantum artifacts, with scope, cost, maturity, and open gaps |
 | [`benchmarks/`](benchmarks/) | Task format and benchmark tasks built from real QOSS work |
 | [`data/`](data/) | Datasets behind the paper's figures, with the re-measurement schedule |
