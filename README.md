@@ -18,7 +18,7 @@ citation stays stable while the content moves on.
 | [`verifiers/`](verifiers/) | Catalog of verification tools for quantum artifacts, with scope, cost, maturity, and open gaps |
 | [`benchmarks/`](benchmarks/) | Task format and benchmark tasks built from real QOSS work |
 | [`data/`](data/) | Datasets behind the paper's figures, with the re-measurement schedule |
-| [`reading/`](reading/) | Short annotated bibliography |
+| [`reading/`](reading/) | Reading list, one line per entry |
 
 ## Conventions
 
