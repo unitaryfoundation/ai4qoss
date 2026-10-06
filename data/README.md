@@ -4,7 +4,12 @@ Datasets behind the figures in the perspective paper. Scope is deliberate: what 
 three figures rest on, and nothing else. Survey responses, raw pull request caches, and
 the organizers' bounty list stay outside this repository.
 
-Last verified: 2026-08-23
+Last verified: 2026-10-06
+
+The disclosure, interface-survival, and test-suite files were re-measured on
+2026-10-06, with disclosure counted through 2026-09-30 so that the last quarter is
+complete. `corpus_size.csv` and the two task aggregates still carry the August 2026
+measurement.
 
 ## Contents
 

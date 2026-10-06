@@ -1,20 +1,20 @@
 project,group,commits_total,disclosed_total,ai_bot_authored,distinct_disclosing_authors,commits_by_top_discloser
-Qiskit,quantum,10477,4,0,3,2
-Qiskit Aer,quantum,1641,0,0,0,0
-Qiskit IBM Runtime,quantum,2494,4,0,3,2
-PennyLane,quantum,7156,14,0,7,6
-PennyLane Lightning,quantum,922,1,0,1,1
-Cirq,quantum,4828,0,0,0,0
-OpenFermion,quantum,904,0,0,0,0
-Stim,quantum,743,0,0,0,0
-QuTiP,quantum,12767,2,0,1,2
-Mitiq,quantum,1792,6,0,4,3
-tket,quantum,1616,0,0,0,0
-numpy,mainstream,41704,18,0,8,4
-scipy,mainstream,38037,39,0,6,30
-matplotlib,mainstream,55101,6,0,5,2
-pandas,mainstream,38626,776,0,14,752
-sympy,mainstream,62522,15,0,4,4
-astropy,mainstream,41603,13,6,2,5
-scikit-learn,mainstream,33919,4,0,3,2
-networkx,mainstream,8371,0,0,0,0
+Qiskit,quantum,10634,8,0,6,2
+Qiskit Aer,quantum,1643,0,0,0,0
+Qiskit IBM Runtime,quantum,2625,8,0,3,6
+PennyLane,quantum,7371,50,0,13,19
+PennyLane Lightning,quantum,929,1,0,1,1
+Cirq,quantum,4892,0,0,0,0
+OpenFermion,quantum,910,0,0,0,0
+Stim,quantum,746,0,0,0,0
+QuTiP,quantum,12901,2,0,1,2
+Mitiq,quantum,1818,9,0,4,6
+tket,quantum,1635,0,0,0,0
+numpy,mainstream,42232,31,0,9,15
+scipy,mainstream,38395,43,1,8,31
+matplotlib,mainstream,55406,6,0,5,2
+pandas,mainstream,39202,1145,0,20,1107
+sympy,mainstream,62966,78,0,9,27
+astropy,mainstream,41837,27,6,3,15
+scikit-learn,mainstream,34032,6,0,4,2
+networkx,mainstream,8436,1,0,1,1

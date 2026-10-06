@@ -9,7 +9,7 @@ Qiskit,quantum,2025Q3,184,0,0.0,0,15
 Qiskit,quantum,2025Q4,175,0,0.0,0,17
 Qiskit,quantum,2026Q1,221,0,0.0,0,16
 Qiskit,quantum,2026Q2,241,3,1.24,0,27
-Qiskit,quantum,2026Q3,85,1,1.18,0,10
+Qiskit,quantum,2026Q3,242,5,2.07,0,15
 Qiskit Aer,quantum,2024Q1,27,0,0.0,0,0
 Qiskit Aer,quantum,2024Q2,35,0,0.0,0,0
 Qiskit Aer,quantum,2024Q3,28,0,0.0,0,0
@@ -20,6 +20,7 @@ Qiskit Aer,quantum,2025Q3,6,0,0.0,0,0
 Qiskit Aer,quantum,2025Q4,1,0,0.0,0,0
 Qiskit Aer,quantum,2026Q1,3,0,0.0,0,0
 Qiskit Aer,quantum,2026Q2,10,0,0.0,0,0
+Qiskit Aer,quantum,2026Q3,2,0,0.0,0,0
 Qiskit IBM Runtime,quantum,2024Q1,141,0,0.0,0,0
 Qiskit IBM Runtime,quantum,2024Q2,106,0,0.0,0,0
 Qiskit IBM Runtime,quantum,2024Q3,115,0,0.0,0,0
@@ -30,7 +31,7 @@ Qiskit IBM Runtime,quantum,2025Q3,58,0,0.0,0,0
 Qiskit IBM Runtime,quantum,2025Q4,80,0,0.0,0,0
 Qiskit IBM Runtime,quantum,2026Q1,124,0,0.0,0,0
 Qiskit IBM Runtime,quantum,2026Q2,157,1,0.64,0,0
-Qiskit IBM Runtime,quantum,2026Q3,144,3,2.08,0,0
+Qiskit IBM Runtime,quantum,2026Q3,275,7,2.55,0,0
 PennyLane,quantum,2024Q1,226,0,0.0,0,17
 PennyLane,quantum,2024Q2,268,0,0.0,0,14
 PennyLane,quantum,2024Q3,257,0,0.0,0,15
@@ -41,7 +42,7 @@ PennyLane,quantum,2025Q3,453,1,0.22,0,27
 PennyLane,quantum,2025Q4,349,5,1.43,0,27
 PennyLane,quantum,2026Q1,302,0,0.0,0,20
 PennyLane,quantum,2026Q2,347,5,1.44,0,17
-PennyLane,quantum,2026Q3,137,2,1.46,0,2
+PennyLane,quantum,2026Q3,352,38,10.8,0,12
 PennyLane Lightning,quantum,2024Q1,54,0,0.0,0,3
 PennyLane Lightning,quantum,2024Q2,79,0,0.0,0,0
 PennyLane Lightning,quantum,2024Q3,94,0,0.0,0,2
@@ -52,7 +53,7 @@ PennyLane Lightning,quantum,2025Q3,47,0,0.0,0,0
 PennyLane Lightning,quantum,2025Q4,29,1,3.45,0,0
 PennyLane Lightning,quantum,2026Q1,32,0,0.0,0,0
 PennyLane Lightning,quantum,2026Q2,29,0,0.0,0,0
-PennyLane Lightning,quantum,2026Q3,8,0,0.0,0,0
+PennyLane Lightning,quantum,2026Q3,15,0,0.0,0,0
 Cirq,quantum,2024Q1,72,0,0.0,0,6
 Cirq,quantum,2024Q2,64,0,0.0,0,2
 Cirq,quantum,2024Q3,53,0,0.0,0,3
@@ -63,7 +64,7 @@ Cirq,quantum,2025Q3,146,0,0.0,0,7
 Cirq,quantum,2025Q4,82,0,0.0,0,6
 Cirq,quantum,2026Q1,107,0,0.0,0,4
 Cirq,quantum,2026Q2,100,0,0.0,0,3
-Cirq,quantum,2026Q3,61,0,0.0,0,2
+Cirq,quantum,2026Q3,125,0,0.0,0,3
 OpenFermion,quantum,2024Q1,6,0,0.0,0,1
 OpenFermion,quantum,2024Q2,10,0,0.0,0,10
 OpenFermion,quantum,2024Q3,4,0,0.0,0,3
@@ -73,7 +74,7 @@ OpenFermion,quantum,2025Q3,30,0,0.0,0,14
 OpenFermion,quantum,2025Q4,16,0,0.0,0,11
 OpenFermion,quantum,2026Q1,38,0,0.0,0,11
 OpenFermion,quantum,2026Q2,88,0,0.0,0,11
-OpenFermion,quantum,2026Q3,29,0,0.0,0,7
+OpenFermion,quantum,2026Q3,35,0,0.0,0,8
 Stim,quantum,2024Q1,29,0,0.0,0,0
 Stim,quantum,2024Q2,14,0,0.0,0,0
 Stim,quantum,2024Q3,30,0,0.0,0,0
@@ -84,7 +85,7 @@ Stim,quantum,2025Q3,8,0,0.0,0,0
 Stim,quantum,2025Q4,1,0,0.0,0,0
 Stim,quantum,2026Q1,18,0,0.0,0,1
 Stim,quantum,2026Q2,25,0,0.0,0,1
-Stim,quantum,2026Q3,5,0,0.0,0,0
+Stim,quantum,2026Q3,8,0,0.0,0,0
 QuTiP,quantum,2024Q1,239,0,0.0,0,2
 QuTiP,quantum,2024Q2,324,0,0.0,0,5
 QuTiP,quantum,2024Q3,233,0,0.0,0,2
@@ -95,7 +96,7 @@ QuTiP,quantum,2025Q3,139,0,0.0,0,0
 QuTiP,quantum,2025Q4,137,2,1.46,0,2
 QuTiP,quantum,2026Q1,304,0,0.0,0,6
 QuTiP,quantum,2026Q2,205,0,0.0,0,5
-QuTiP,quantum,2026Q3,86,0,0.0,0,4
+QuTiP,quantum,2026Q3,220,0,0.0,0,4
 Mitiq,quantum,2024Q1,44,0,0.0,0,20
 Mitiq,quantum,2024Q2,65,0,0.0,0,12
 Mitiq,quantum,2024Q3,40,0,0.0,0,16
@@ -106,7 +107,7 @@ Mitiq,quantum,2025Q3,20,1,5.0,0,4
 Mitiq,quantum,2025Q4,25,0,0.0,0,9
 Mitiq,quantum,2026Q1,62,2,3.23,0,35
 Mitiq,quantum,2026Q2,48,0,0.0,0,30
-Mitiq,quantum,2026Q3,19,2,10.53,0,9
+Mitiq,quantum,2026Q3,45,5,11.11,0,22
 tket,quantum,2024Q1,100,0,0.0,0,7
 tket,quantum,2024Q2,76,0,0.0,0,3
 tket,quantum,2024Q3,66,0,0.0,0,6
@@ -117,7 +118,7 @@ tket,quantum,2025Q3,51,0,0.0,0,1
 tket,quantum,2025Q4,32,0,0.0,0,7
 tket,quantum,2026Q1,41,0,0.0,0,9
 tket,quantum,2026Q2,40,0,0.0,0,12
-tket,quantum,2026Q3,14,0,0.0,0,5
+tket,quantum,2026Q3,33,0,0.0,0,6
 numpy,mainstream,2024Q1,871,0,0.0,0,23
 numpy,mainstream,2024Q2,761,0,0.0,0,20
 numpy,mainstream,2024Q3,817,0,0.0,0,31
@@ -126,9 +127,9 @@ numpy,mainstream,2025Q1,578,0,0.0,0,23
 numpy,mainstream,2025Q2,733,0,0.0,0,23
 numpy,mainstream,2025Q3,460,0,0.0,0,34
 numpy,mainstream,2025Q4,773,3,0.39,0,40
-numpy,mainstream,2026Q1,598,3,0.5,0,35
-numpy,mainstream,2026Q2,463,8,1.73,0,62
-numpy,mainstream,2026Q3,278,4,1.44,0,21
+numpy,mainstream,2026Q1,603,4,0.66,0,35
+numpy,mainstream,2026Q2,464,8,1.72,0,62
+numpy,mainstream,2026Q3,800,16,2.0,0,49
 scipy,mainstream,2024Q1,700,0,0.0,0,0
 scipy,mainstream,2024Q2,848,0,0.0,0,0
 scipy,mainstream,2024Q3,765,0,0.0,0,0
@@ -138,8 +139,8 @@ scipy,mainstream,2025Q2,643,0,0.0,0,0
 scipy,mainstream,2025Q3,404,0,0.0,0,0
 scipy,mainstream,2025Q4,683,0,0.0,0,0
 scipy,mainstream,2026Q1,633,22,3.48,0,0
-scipy,mainstream,2026Q2,506,12,2.37,0,0
-scipy,mainstream,2026Q3,212,5,2.36,0,0
+scipy,mainstream,2026Q2,508,12,2.36,0,0
+scipy,mainstream,2026Q3,568,9,1.58,1,0
 matplotlib,mainstream,2024Q1,593,0,0.0,0,10
 matplotlib,mainstream,2024Q2,585,0,0.0,0,5
 matplotlib,mainstream,2024Q3,545,0,0.0,0,6
@@ -148,9 +149,9 @@ matplotlib,mainstream,2025Q1,547,0,0.0,0,7
 matplotlib,mainstream,2025Q2,502,0,0.0,0,9
 matplotlib,mainstream,2025Q3,542,0,0.0,0,6
 matplotlib,mainstream,2025Q4,251,0,0.0,0,3
-matplotlib,mainstream,2026Q1,519,3,0.58,0,10
-matplotlib,mainstream,2026Q2,704,2,0.28,0,14
-matplotlib,mainstream,2026Q3,184,1,0.54,0,6
+matplotlib,mainstream,2026Q1,526,3,0.57,0,10
+matplotlib,mainstream,2026Q2,708,2,0.28,0,14
+matplotlib,mainstream,2026Q3,478,1,0.21,0,13
 pandas,mainstream,2024Q1,616,0,0.0,0,4
 pandas,mainstream,2024Q2,519,0,0.0,0,6
 pandas,mainstream,2024Q3,374,1,0.27,0,4
@@ -161,29 +162,29 @@ pandas,mainstream,2025Q3,275,0,0.0,0,14
 pandas,mainstream,2025Q4,430,3,0.7,0,11
 pandas,mainstream,2026Q1,702,153,21.79,0,13
 pandas,mainstream,2026Q2,629,355,56.44,0,37
-pandas,mainstream,2026Q3,373,264,70.78,0,29
+pandas,mainstream,2026Q3,949,633,66.7,0,50
 sympy,mainstream,2024Q1,651,0,0.0,0,0
 sympy,mainstream,2024Q2,648,0,0.0,0,0
 sympy,mainstream,2024Q3,705,0,0.0,0,1
 sympy,mainstream,2024Q4,387,0,0.0,0,3
 sympy,mainstream,2025Q1,590,0,0.0,0,2
-sympy,mainstream,2025Q2,599,0,0.0,0,1
+sympy,mainstream,2025Q2,616,0,0.0,0,1
 sympy,mainstream,2025Q3,599,0,0.0,0,2
-sympy,mainstream,2025Q4,376,0,0.0,0,2
-sympy,mainstream,2026Q1,423,0,0.0,0,1
-sympy,mainstream,2026Q2,336,8,2.38,0,2
-sympy,mainstream,2026Q3,208,7,3.37,0,1
+sympy,mainstream,2025Q4,377,0,0.0,0,2
+sympy,mainstream,2026Q1,426,0,0.0,0,1
+sympy,mainstream,2026Q2,356,8,2.25,0,2
+sympy,mainstream,2026Q3,611,70,11.46,0,3
 astropy,mainstream,2024Q1,469,0,0.0,0,10
 astropy,mainstream,2024Q2,437,0,0.0,0,4
-astropy,mainstream,2024Q3,594,0,0.0,0,14
-astropy,mainstream,2024Q4,680,0,0.0,0,13
+astropy,mainstream,2024Q3,595,0,0.0,0,14
+astropy,mainstream,2024Q4,681,0,0.0,0,13
 astropy,mainstream,2025Q1,402,0,0.0,0,7
 astropy,mainstream,2025Q2,447,1,0.22,0,10
 astropy,mainstream,2025Q3,342,0,0.0,0,11
-astropy,mainstream,2025Q4,436,6,1.38,6,9
+astropy,mainstream,2025Q4,439,6,1.37,6,9
 astropy,mainstream,2026Q1,352,0,0.0,0,9
-astropy,mainstream,2026Q2,548,5,0.91,0,21
-astropy,mainstream,2026Q3,131,1,0.76,0,6
+astropy,mainstream,2026Q2,561,5,0.89,0,21
+astropy,mainstream,2026Q3,346,15,4.34,0,7
 scikit-learn,mainstream,2024Q1,386,0,0.0,0,0
 scikit-learn,mainstream,2024Q2,307,0,0.0,0,1
 scikit-learn,mainstream,2024Q3,277,0,0.0,0,2
@@ -194,7 +195,7 @@ scikit-learn,mainstream,2025Q3,309,0,0.0,0,1
 scikit-learn,mainstream,2025Q4,366,0,0.0,0,1
 scikit-learn,mainstream,2026Q1,232,0,0.0,0,3
 scikit-learn,mainstream,2026Q2,300,2,0.67,0,1
-scikit-learn,mainstream,2026Q3,122,1,0.82,0,0
+scikit-learn,mainstream,2026Q3,235,3,1.28,0,0
 networkx,mainstream,2024Q1,109,0,0.0,0,3
 networkx,mainstream,2024Q2,54,0,0.0,0,1
 networkx,mainstream,2024Q3,81,0,0.0,0,0
@@ -205,4 +206,4 @@ networkx,mainstream,2025Q3,93,0,0.0,0,2
 networkx,mainstream,2025Q4,88,0,0.0,0,3
 networkx,mainstream,2026Q1,69,0,0.0,0,3
 networkx,mainstream,2026Q2,70,0,0.0,0,3
-networkx,mainstream,2026Q3,37,0,0.0,0,2
+networkx,mainstream,2026Q3,102,1,0.98,0,3
