@@ -8,8 +8,8 @@ Last verified: 2026-10-06
 
 The disclosure, interface-survival, and test-suite files were re-measured on
 2026-10-06, with disclosure counted through 2026-09-30 so that the last quarter is
-complete. `corpus_size.csv` and the two task aggregates still carry the August 2026
-measurement.
+complete. The task aggregates were re-resolved the same day for the bounties that were
+still open in August, which moved one more bounty into the usable set.
 
 ## Contents
 
@@ -40,7 +40,7 @@ Files are in [figures/](figures/), grouped by the figure they support.
 | File | Contents |
 |---|---|
 | `task_pipeline_by_year.csv` | Counts at each stage from bounty to usable task, per year, and what the reference solutions change |
-| `task_solution_size.csv` | Distribution of lines changed across the 430 reference solutions |
+| `task_solution_size.csv` | Distribution of lines changed across the 431 reference solutions |
 | `bounties_by_year.csv` | Bounties offered per year, aggregated |
 | `ai_attitudes.csv` | Topic counts from the free-text AI questions of the 2026 surveys |
 
