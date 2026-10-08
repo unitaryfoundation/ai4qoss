@@ -7,7 +7,7 @@ Status: draft
 
 Improve a compiler or transpiler pass against a cost metric, typically two-qubit gate
 count, circuit depth, or T count, without changing what the circuit computes. Done
-means: the metric improves on a benchmark set, every compiled circuit is checked
+means: the metric improves on a benchmark set, every compiled circuit is verified
 equivalent to its input, and the project's own test suite still passes.
 
 This is the task where an unchecked loop is most dangerous. The metric rewards
@@ -20,12 +20,12 @@ than the requested circuit.
    record the baseline metric for each circuit.
 2. Agent proposes a change to a pass or its heuristics.
 3. Compile the benchmark set. Every circuit goes through the equivalence check below.
-   Any circuit that fails, or that the checker cannot decide, rejects the change.
+   Any circuit that fails, or that the verifier cannot decide, rejects the change.
 4. Compare the metric against the baseline; keep the change only if it improves the
    aggregate without regressing individual circuits beyond a stated tolerance.
 5. Run the project's test suite before opening a pull request.
 
-## Check
+## Verification
 
 Equivalence of each compiled circuit against its input, then the project's test
 suite. MQT QCEC provides this as a single call, `verify_compilation()`, which is built
@@ -54,9 +54,9 @@ does not apply.
   cheaper than proof, so a broken change is often rejected quickly even when proving
   equivalence would be infeasible.
 - Where it can be fooled: three ways, in increasing order of how easily they slip
-  through. The checker can return that it could not decide, and a loop that treats
-  that as success has no check at all; treat undecided as failure. The checker is
-  itself a tested but unverified program, so a pass and the checker can share a
+  through. The verifier can return that it could not decide, and a loop that treats
+  that as success leaves no verification at all; treat undecided as failure. The verifier is
+  itself a tested but unverified program, so a pass and the verifier can share a
   blind spot. And equivalence says nothing about the metric being meaningful:
   optimizing two-qubit gate count on circuits unlike the ones users run produces a
   pass that is correct and useless, which is why the benchmark set is fixed in step 1
@@ -65,7 +65,7 @@ does not apply.
 ## Guardrails
 
 - The equivalence check runs on every benchmark circuit, not a sample, and the agent
-  cannot edit the checker, the benchmark set, or the device model.
+  cannot edit the verifier, the benchmark set, or the device model.
 - Metric regressions on individual circuits need a human decision even when the
   aggregate improves.
 - No changes to pass ordering defaults or to public APIs without maintainer sign-off;
@@ -76,13 +76,13 @@ does not apply.
 
 ## Cost and results
 
-We have not run this harness. What follows is what is known about the pieces, and the
-check is the piece with the hardest constraint.
+We have not run this harness. What follows is what is known about the pieces, and
+verification is the piece with the hardest constraint.
 
 One project has published its attempt to raise that constraint. ucc, the Unitary
 Foundation's compiler collection, verifies compilation in its own test suite by
 comparing state vectors, which holds those tests to small circuits. In November 2024
-it opened an issue asking how to check large compiled circuits and offered a bounty
+it opened an issue asking how to verify large compiled circuits and offered a bounty
 ([ucc#62](https://github.com/unitaryfoundation/ucc/issues/62)). Over 26 comments a
 contributor tried QCEC, PyZX, and Giallar. QCEC verified 100-qubit random Clifford
 circuits from ucc's tests in more than 24 hours on a 96-core machine, handled about 20

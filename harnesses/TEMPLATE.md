@@ -11,11 +11,11 @@ One paragraph: what the agent is asked to do, and what "done" means.
 
 The steps the agent iterates through, including what feedback it gets between attempts.
 
-## Check
+## Verification
 
 What the loop relies on to decide whether an attempt succeeded.
 
-- What it is (test suite, equivalence checker, simulator comparison, doctest run, ...)
+- What it is (test suite, equivalence verifier, simulator comparison, doctest run, ...)
 - What it costs per iteration (time, compute, money)
 - Where it can be fooled, and what limits that
 

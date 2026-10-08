@@ -50,9 +50,9 @@ Last verified: 2026-08-27
 - Probabilistic tests use fixed seeds and explicit tolerances. Do not loosen a
   tolerance, skip a test, or silence a linter warning to make a check pass;
   report the failure instead.
-- [Project-specific checks: the circuit-equivalence suite and when to run it,
+- [Project-specific verification: the circuit-equivalence suite and when to run it,
   conventions for statevector or unitary comparison, the qubit sizes above
-  which exact checks stop being practical.]
+  which exact verification stops being practical.]
 
 ## Boundaries
 

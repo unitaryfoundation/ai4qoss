@@ -89,7 +89,7 @@ it can be revised as it happens.
 |---|---|---|
 | `corpus_size.csv` | Annual | New framework releases, and consolidation of the ecosystem onto fewer libraries |
 | `api_survival.csv`, `api_churn_summary.csv` | Annual, on each project's latest stable release | Major releases; the 2021 baseline stays fixed so the series stays comparable |
-| `qubit_counts.csv`, `qubit_by_module.csv`, `circuit_kind.csv` | Annual | Growth of the test suites; adoption of checks that do not need full simulation |
+| `qubit_counts.csv`, `qubit_by_module.csv`, `circuit_kind.csv` | Annual | Growth of the test suites; adoption of verification that does not need full simulation |
 | `ai_disclosure_*.csv` | Quarterly | Projects adding or removing a disclosure field; tools changing what they write into a commit |
 | `task_pipeline_by_year.csv`, `task_solution_size.csv` | After each unitaryHACK event | The next event's bounty list |
 | `ai_attitudes.csv` | After each event that asks about AI | The survey instrument, which changed in 2026 when the AI questions were added |

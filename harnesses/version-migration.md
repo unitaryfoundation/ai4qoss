@@ -17,7 +17,7 @@ pinned target version, with no use of APIs deprecated in that version.
    migration guide and changelog as context.
 4. Re-run; repeat until the suite is green and the deprecation log is empty.
 
-## Check
+## Verification
 
 The project's own test suite on the pinned target environment, plus the deprecation
 warning log.
@@ -37,7 +37,7 @@ warning log.
 ## Cost and results
 
 We have not run this harness ourselves, and no published study measures a quantum
-migration the way this card checks one, by running the target project's test suite on
+migration the way this card verifies one, by running the target project's test suite on
 the pinned version.
 
 The published work on Qiskit migration with language models detects migration
@@ -74,7 +74,7 @@ passing test suite: with the strongest model, 94 percent of 1,996 code changes w
 correct while 16 of the 25 migrations that had usable coverage passed their tests, at
 0.16 US dollars per thousand lines
 ([arXiv:2504.13272](https://arxiv.org/html/2504.13272v2)). The gap between a correct
-edit and a passing suite is the reason this card's check is the test suite.
+edit and a passing suite is the reason this card's verification is the test suite.
 
 A rule-based comparison exists for Qiskit specifically:
 [flake8-qiskit-migration](https://github.com/frankharkins/flake8-qiskit-migration)

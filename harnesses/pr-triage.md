@@ -1,6 +1,6 @@
 # Pull request triage
 
-Last verified: 2026-08-28
+Last verified: 2026-10-07
 Status: draft
 
 ## Task
@@ -26,15 +26,24 @@ project's behalf.
 3. The agent lists open questions for the maintainer rather than verdicts.
 4. The maintainer reviews and decides.
 
-## Check
+## Verification
 
-There is no automatic check on the output of step 2, which is what separates this card
-from the others in this directory. A triage summary is prose, and its errors are
+There is no automatic verification of the output of step 2, which is what separates this
+card from the others in this directory. A triage summary is prose, and its errors are
 omissions.
 
-What can be checked is the gate layer in step 1, and the useful discipline is to keep
+What can be verified is the gate layer in step 1, and the useful discipline is to keep
 the two apart: anything mechanically decidable belongs in CI, where it is
 deterministic and auditable, and the model handles only what needs reading.
+
+What takes the place of per-run verification is a back-test before the harness is
+trusted. Run it over pull requests the project has already reviewed and closed, where the
+maintainers' own comments and decisions are the reference, and compare the summary
+against them: did it name the part of the diff that review actually turned on, and did
+it miss anything a reviewer raised. Keep the sample recent enough that the project's
+conventions have not moved, score it by hand, and repeat it whenever the model or the
+prompt changes. This measures the summary against decisions a maintainer already made,
+which is the only reference available for prose output.
 
 - Cost per PR: the CI run, plus one model pass over the diff.
 - Where it can be fooled: a summary that reads well and misses the thing that matters.
@@ -42,7 +51,7 @@ deterministic and auditable, and the model handles only what needs reading.
   with no summary. The mitigation that works is structural: the maintainer's decision
   is recorded against the diff rather than against the summary, and every claim in the
   summary cites the lines it came from, so a spot check is cheap. Asking the model to
-  declare what it did not examine is a useful convention and not a check, since it
+  declare what it did not examine is a useful convention and not verification, since it
   relies on the same judgment that failed.
 
 ## Guardrails

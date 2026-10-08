@@ -16,7 +16,7 @@ or script, the observed and expected behavior, and the environment pin.
    it fails, and against the latest release to check whether it is already fixed.
 3. Files the report with the reproduction attached and the disclosure footer.
 
-## Check
+## Verification
 
 The reproduction itself: it must fail on the current head, in a clean environment,
 deterministically (fixed seed for probabilistic behavior, with the tolerance stated).
@@ -51,16 +51,16 @@ percent of cases (SWT-Bench,
 Defects4J bugs, or 33 percent, and 32 percent of a 31-bug set postdating its model's
 training data ([ICSE 2023](https://doi.org/10.1109/ICSE48619.2023.00194)); the same
 method scores 14.1 percent on SWT-Bench, so the higher figure describes Defects4J
-rather than the method. An agent asked to file a report will therefore fail this
-card's check most of the time, which is the intended behavior: the loop reports that
-it cannot reproduce rather than filing.
+rather than the method. An agent asked to file a report will therefore fail this card's
+verification most of the time, which is the intended behavior: the loop reports that it
+cannot reproduce rather than filing.
 
 What an unfiltered stream of AI-assisted reports costs the receiving side is
 documented in curl's decision to end its bug bounty on 31 January 2026. The share of
 submissions that were confirmed vulnerabilities fell from above 15 percent over the
 program's lifetime to below 5 percent in 2025, with roughly 20 percent of submissions
-judged AI slop, arriving at about two per week, each engaging three or four people for
-30 minutes and sometimes up to three hours
+judged low-quality AI-generated reports, arriving at about two per week, each engaging
+three or four people for 30 minutes and sometimes up to three hours
 ([Stenberg, July 2025](https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/),
 [January 2026](https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/)).
 The trajectory did not stay there. By April 2026 Stenberg reported the confirmed rate
@@ -94,8 +94,8 @@ while 10 percent ranked duplicates that way and none ranked spam that way
 ([Bettenburg et al., FSE 2008](https://doi.org/10.1145/1453101.1453146)). Those are
 ratings of importance and severity rather than counts of what reports contain, and the
 survey predates AI-assisted submissions, so the last figure says that spam was not
-then a leading concern. The check on this card is the mechanized version of the first
-preference.
+then a leading concern. The verification on this card is the mechanized version of the
+first preference.
 
 Reproductions also decay, which is why the environment pin belongs in the report. Of
 37 Bugs4Q artifacts, 62.2 percent still reproduced on Qiskit 0.20.1 against 16.2

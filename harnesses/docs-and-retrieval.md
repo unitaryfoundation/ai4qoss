@@ -16,16 +16,16 @@ blend to be wrong in ways that read as plausible.
 ## Loop
 
 1. Pin the version and build the environment. State the version in the page itself, so
-   a reader can tell what the example was checked against.
+   a reader can tell what the example was verified against.
 2. Retrieve the current documentation and release notes for the target version and put
    them in the agent's context rather than relying on the model's recollection of the
    API. The evidence for this step is partial, and it is discussed below; a project
-   instrumenting the loop should check whether retrieval earns its cost here.
+   instrumenting the loop should measure whether retrieval is worth its cost here.
 3. Agent drafts or updates the page.
 4. Execute every code block in the page. Failures return to step 3 with the traceback.
 5. A human reads the prose. Executability is not correctness of explanation.
 
-## Check
+## Verification
 
 Executable documentation: every example in the page runs under the pinned version,
 through doctests, a notebook execution in the docs build, or an equivalent mechanism
@@ -78,7 +78,7 @@ answer key, so it bounds documentation retrieval rather than documentation writi
 The same paper attempted two real Qibo issues, #1699 and #1710, and reported the
 attempts qualitatively; both issues were opened by a maintainer and both remain open.
 
-For the check itself, no measurement is needed to justify it, but adoption is uneven
+For the verification itself, no measurement is needed to justify it, but adoption is uneven
 and worth checking in the target project before assuming the gate exists. A project
 whose documentation examples are not executed in continuous integration has no
 mechanism to reject a plausible-looking stale example, whoever wrote it.

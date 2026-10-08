@@ -17,7 +17,7 @@ tests still passing, and a PR description a reviewer can follow.
 3. Explain: agent drafts the PR description: what failed, why, what changed, and the
    disclosure footer.
 
-## Check
+## Verification
 
 Test-first gating: the new regression test must fail before the change and pass after
 it; the existing suite must stay green. This is gate 2 in
@@ -48,7 +48,7 @@ enforces it.
 ## Cost and results
 
 We have not run this harness ourselves. The numbers below come from published
-benchmarks whose task form matches the check above, a real issue plus the repository's
+benchmarks whose task form matches the verification above, a real issue plus the repository's
 own tests, and they set expectations rather than measure this card.
 
 The only repository-level results on quantum software come from AInsteinBench

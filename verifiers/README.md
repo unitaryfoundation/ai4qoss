@@ -1,8 +1,8 @@
 # Verifier catalog
 
-Tools that check a quantum artifact (a circuit, a detector error model, a code spec)
+Tools that verify a quantum artifact (a circuit, a detector error model, a code spec)
 and report whether it is sound, ideally without full simulation and with a concrete
-counterexample on failure. These are the checks that harnesses and CI gates rely on;
+counterexample on failure. These are the verifiers that harnesses and CI gates rely on;
 the catalog records what exists, what it costs, and where the gaps are.
 
 Entries must state concrete scope limits, including the sizes at which the tool remains
@@ -14,7 +14,7 @@ Last verified: 2026-08-28
 
 ### Circuits
 
-| Tool | What it checks | Cost | Maturity | Link |
+| Tool | What it verifies | Cost | Maturity | Link |
 |---|---|---|---|---|
 | MQT QCEC | Equivalence of two circuits, for example before and after transpilation, through decision diagrams, simulation-based falsification, and ZX-calculus rewriting; `verify_compilation()` handles the layout permutation and ancillas that compilation introduces | Seconds for moderate sizes and worst case exponential; fast when the two circuits are structurally close, which is the compilation case. One project reported about 20 qubits within an hour on random Clifford pairs, the adversarial case, and over 24 hours at 100 qubits ([ucc#62](https://github.com/unitaryfoundation/ucc/issues/62)) | Mature, maintained | [github.com/munich-quantum-toolkit/qcec](https://github.com/munich-quantum-toolkit/qcec) · [IEEE TCAD 40, 1810 (2021)](https://doi.org/10.1109/TCAD.2020.3032630) |
 | PyZX | ZX-calculus simplification and equivalence | Fast on Clifford+T structures | Mature, maintained | [github.com/zxcalc/pyzx](https://github.com/zxcalc/pyzx) · [EPTCS 318, 229 (2020)](https://doi.org/10.4204/EPTCS.318.14) |
@@ -24,7 +24,7 @@ Last verified: 2026-08-28
 
 ### Error correction
 
-| Tool | What it checks | Cost | Maturity | Link |
+| Tool | What it verifies | Cost | Maturity | Link |
 |---|---|---|---|---|
 | Stim | Stabilizer circuits and detector error models: Clifford simulation, and logical-error search for distance upper bounds | Simulation fast at large qubit counts; error search exact only for graphlike errors | Mature, maintained | [github.com/quantumlib/Stim](https://github.com/quantumlib/Stim) · [Quantum 5, 497 (2021)](https://doi.org/10.22331/q-2021-07-06-497) |
 | emlint | Structural problems in a Stim detector error model, and equivalence of two models | Quasilinear in the number of instructions; decides equivalence exactly for non-adaptive pipelines, soundly for partially adaptive ones such as lattice surgery | Early; v0.2 is preliminary and its APIs may change | [github.com/MathysRennela/emlint](https://github.com/MathysRennela/emlint) · [arXiv:2606.14677](https://arxiv.org/abs/2606.14677) |
@@ -40,7 +40,7 @@ counts concentrate in the platform-testing line. Among user-program tools, QuChe
 the one with current activity; the mutation and coverage tools from the 2021 to 2023
 research wave are frozen and predate Qiskit 1.0.
 
-| Tool | What it checks | Cost | Maturity | Link |
+| Tool | What it tests | Cost | Maturity | Link |
 |---|---|---|---|---|
 | QITE (IterTestQ) | Round-trips OpenQASM through the importers, optimizers, and exporters of Qiskit, PennyLane, Pytket, BQSKit, and more recently Cirq, cross-checking crashes and circuit equivalence with QCEC | Formal equivalence check per round trip; the published evaluation used 11-qubit, 15-gate programs | Actively developed in 2026; 23 platform bugs reported and 17 confirmed or fixed per the project README, against 17 and 14 in the paper | [github.com/sola-st/qite-quantum-platform-testing](https://github.com/sola-st/qite-quantum-platform-testing) · [arXiv:2503.17322](https://arxiv.org/abs/2503.17322) |
 | MorphQ | Metamorphic testing of Qiskit: generates valid programs, applies semantics-preserving transformations, flags crashes and output divergence between related pairs | Roughly 8,000 program pairs in two days on commodity hardware, simulation only | Research artifact, last activity March 2025; 13 Qiskit bugs, 9 confirmed (ICSE 2023) | [github.com/sola-st/MorphQ-Quantum-Qiskit-Testing-ICSE-23](https://github.com/sola-st/MorphQ-Quantum-Qiskit-Testing-ICSE-23) · [arXiv:2206.01111](https://arxiv.org/abs/2206.01111) |
@@ -57,7 +57,7 @@ deductive verifier. Each verifies programs written in its own language; applying
 to an existing codebase means porting the program and supplying proofs, which is
 formal-methods work with a timescale of months.
 
-| Tool | What it checks | Cost | Maturity | Link |
+| Tool | What it verifies | Cost | Maturity | Link |
 |---|---|---|---|---|
 | VOQC (on SQIR) | A circuit optimizer whose passes are proven semantics-preserving in Coq; SQIR, the underlying circuit language, supports proving programs correct up to a certified end-to-end Shor implementation ([PNAS 120, e2218775120 (2023)](https://doi.org/10.1073/pnas.2218775120)) | Verified once and for all; running the extracted optimizer is push-button | Framework maintained at low intensity; the extracted binaries (mlvoqc, pyvoqc) have had no release since 2022 and their Qiskit interop predates Qiskit 1.0 | [github.com/inQWIRE/SQIR](https://github.com/inQWIRE/SQIR) · [POPL 2021](https://doi.org/10.1145/3434318) · [arXiv:1912.02250](https://arxiv.org/abs/1912.02250) |
 | Qbricks | Deductive verification (Why3 with SMT solvers) of parametrized circuit-building programs against input-output specifications; verified parametric Shor order finding, QPE, and Grover | Specification and proof effort per program; SMT discharges most obligations, the remaining lemmas are manual | Research artifact, minor activity in 2026 | [github.com/Qbricks/qbricks.github.io](https://github.com/Qbricks/qbricks.github.io) · [ESOP 2021](https://doi.org/10.1007/978-3-030-72019-3_6) · [arXiv:2003.05841](https://arxiv.org/abs/2003.05841) |
@@ -65,11 +65,11 @@ formal-methods work with a timescale of months.
 
 ### Theorem-level claims
 
-| Tool | What it checks | Cost | Maturity | Link |
+| Tool | What it verifies | Cost | Maturity | Link |
 |---|---|---|---|---|
 | Lean 4 + Mathlib | Any claim stated as a theorem, with the proof accepted or rejected by the kernel | High effort to build, instant to re-check | Growing in quantum information (see [reading/](../reading/)) | [github.com/leanprover-community/mathlib4](https://github.com/leanprover-community/mathlib4) |
 
-The largest quantum-information result checked this way is the generalized quantum
+The largest quantum-information result verified this way is the generalized quantum
 Stein's lemma, whose published proof was relied on for a decade before a gap was found
 ([Quantum 7, 1103 (2023)](https://doi.org/10.22331/q-2023-09-07-1103)) and which was
 later re-proven and formalized ([arXiv:2510.08672](https://arxiv.org/abs/2510.08672)).
@@ -87,10 +87,10 @@ Corrections to scope, cost, or maturity are welcome under the usual PR rules.
   counterexample search for a claimed distance is not addressed by either entry above.
 - Detector-error-model equivalence for fully adaptive pipelines, where the existing
   decision procedure is sound and not complete.
-- Noise-model sanity checks: flagging physically inconsistent noise parameters.
+- Noise-model verification: flagging parameters that violate physical constraints.
   Gate set tomography (pyGSTi) reports whether a model is consistent with data;
-  checking a supplied model's internal consistency without data is unaddressed.
-- Soundness checks for error mitigation. No tool checks that a mitigation
+  verifying a supplied model's internal consistency without data is unaddressed.
+- Soundness verification for error mitigation. No tool verifies that a mitigation
   estimator's bias claims hold for a given noise model, or that a composed pipeline
   keeps its stated guarantees; mitiq's calibration module compares strategies
   empirically, with no guarantee attached.
@@ -99,6 +99,6 @@ Corrections to scope, cost, or maturity are welcome under the usual PR rules.
   coverage tools are frozen at 2021 to 2023 and predate Qiskit 1.0.
 - Equivalence checking above the exact-simulation ceiling for non-Clifford circuits,
   with stated soundness trade-offs.
-- Proof-carrying transpilation: passes that emit a checkable equivalence certificate,
+- Proof-carrying transpilation: passes that emit a verifiable equivalence certificate,
   which would take the transpiler out of the trusted set. QCEC validates each
-  compiled circuit, and the checker itself then sits in the trusted set.
+  compiled circuit, and the verifier itself then sits in the trusted set.

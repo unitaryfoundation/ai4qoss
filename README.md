@@ -13,10 +13,10 @@ citation stays stable while the content moves on.
 
 | Directory | Contents |
 |---|---|
-| [`standards/`](standards/) | Policy templates repos can copy: AI contribution disclosure and review, an AGENTS.md template, CI gate examples |
+| [`standards/`](standards/) | Policy templates repos can copy: what a contribution must state, AI disclosure and review, agent boundaries, an AGENTS.md template, CI gate examples |
 | [`harnesses/`](harnesses/) | Designs for agent harnesses a project could build: the task, the loop, the check the loop relies on, and the guardrails. Cards, not code |
 | [`verifiers/`](verifiers/) | Catalog of verification tools for quantum artifacts, with scope, cost, maturity, and open gaps |
-| [`benchmarks/`](benchmarks/) | Task format and benchmark tasks built from real QOSS work |
+| [`benchmarks/`](benchmarks/) | Task format, collection method, and stage counts for tasks built from real QOSS work; the task list itself is not published |
 | [`data/`](data/) | Datasets behind the paper's figures, with the re-measurement schedule |
 | [`reading/`](reading/) | Reading list, one line per entry |
 

@@ -218,11 +218,11 @@ otherwise. And GitHub's default setting already requires maintainer approval bef
 workflows run on a first-time contributor's PR, which gates execution although it does
 not gate merging.
 
-## 5. Equivalence checks where they exist
+## 5. Equivalence verification where it exists
 
 For compiler or transpiler changes: run the project's circuit-equivalence suite in
-addition to the unit tests, exact for small circuits, stabilizer or sampled checks for
-larger ones. Tools, costs, and their limits are in the
+addition to the unit tests, exact for small circuits, stabilizer or sampled comparison
+for larger ones. Tools, costs, and their limits are in the
 [verifier catalog](../verifiers/). This gate is project-specific; the pattern is a
 dedicated CI job that runs the equivalence suite whenever the transpiler or compiler
 paths change, using the same paths-filter mechanism as gate 1.
