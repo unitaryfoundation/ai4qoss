@@ -1,20 +1,20 @@
-project,group,pulls,template_lines,ai_policy_lines,template_asks_about_ai,example_line
-Qiskit,quantum,4041,71,6,yes,"☢️ if you used an ai tool to code this pr, add ""ai tool used: <name and version of the tool>"". for example, ""ai tool use"
-Qiskit Aer,quantum,204,7,0,no,
-Qiskit IBM Runtime,quantum,1367,15,2,yes,"i didn't use llm tooling, or only used it privately."
-PennyLane,quantum,4545,59,0,no,
-PennyLane Lightning,quantum,790,18,0,no,
-Cirq,quantum,1602,43,0,no,
-OpenFermion,quantum,513,32,0,no,
-Stim,quantum,260,0,0,no,
-QuTiP,quantum,531,26,3,yes,no ai tools were used for this contribution.
-Mitiq,quantum,741,59,0,no,
-tket,quantum,712,31,0,no,
-numpy,mainstream,5218,100,9,yes,"the tool(s) used, how they were used, and specify what code or text is ai generated."
-scipy,mainstream,4437,36,7,yes,"the tool(s) used, how they were used, and specify what code or text is ai generated."
-matplotlib,mainstream,3339,106,8,yes,<!-- ✍️ describe if and how ai is used. see https://matplotlib.org/devdocs/devel/contribute.html#use-of-generative-ai --
-pandas,mainstream,8114,82,6,yes,"i used ai to develop this pull request. i prompted it to follow `agents.md`, i have reviewed and understood every change"
-sympy,mainstream,2931,55,11,yes,"in primarily human-authored work. otherwise, write ""no ai use"" in the text area"
-astropy,mainstream,3667,76,2,yes,"*if ai tools were used to develop this pull request, describe the tools including specific model and version, how they w"
-scikit-learn,mainstream,5026,97,10,yes,### ⚠️ note for ai tools and their users: opening a pr on scikit-learn requires **human
-networkx,mainstream,1242,33,1,yes,"if you are using a llm or any other ai model (chatgpt, llama, mistral, claude ...),"
+project,group,pulls,template_lines,ai_policy_lines,template_asks_about_ai
+Qiskit,quantum,4041,71,6,yes
+Qiskit Aer,quantum,204,7,0,no
+Qiskit IBM Runtime,quantum,1367,15,2,yes
+PennyLane,quantum,4545,59,0,no
+PennyLane Lightning,quantum,790,18,0,no
+Cirq,quantum,1602,43,0,no
+OpenFermion,quantum,513,32,0,no
+Stim,quantum,260,0,0,no
+QuTiP,quantum,531,26,3,yes
+Mitiq,quantum,741,59,0,no
+tket,quantum,712,31,0,no
+numpy,mainstream,5218,100,9,yes
+scipy,mainstream,4437,36,7,yes
+matplotlib,mainstream,3339,106,8,yes
+pandas,mainstream,8114,82,6,yes
+sympy,mainstream,2931,55,11,yes
+astropy,mainstream,3667,76,2,yes
+scikit-learn,mainstream,5026,97,10,yes
+networkx,mainstream,1242,33,1,yes

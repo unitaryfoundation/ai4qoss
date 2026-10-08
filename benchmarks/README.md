@@ -5,7 +5,7 @@ merged pull request is the reference solution. Existing quantum coding benchmark
 snippet-level generation or question answering (see [reading/](../reading/)); these tasks
 are drawn from changes that maintainers accepted into their projects.
 
-Last verified: 2026-10-07
+Last verified: 2026-10-08
 
 ## Status
 
@@ -13,10 +13,11 @@ A pilot collection of 431 candidate tasks has been assembled from five unitaryHA
 events (2022 to 2026). Stage counts per year are in
 [../data/figures/task_pipeline_by_year.csv](../data/figures/task_pipeline_by_year.csv).
 
-The per-task list is not published here. It names the repositories and pull requests of
-individual contributors, several of them under personal accounts, so releasing it is a
-question of consent rather than of licensing. Anyone wanting to rebuild the set can do so
-from the method below against an event's own bounty list.
+We publish only the collection method and aggregate statistics. The per-task list,
+issue text, reference patches, and tests are not released. Any future release will
+require a review of the applicable licenses and permissions, alongside privacy
+considerations. The method below describes how to recover issue and pull request links
+from an event's bounty list.
 
 | | count |
 |---|---|

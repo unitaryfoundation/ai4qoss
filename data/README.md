@@ -74,10 +74,14 @@ Survey respondents are the quantum software community at large. They are not the
 contributors to the 19 repositories measured in the disclosure files above, so adoption
 in one and recorded disclosure in the other describe different populations.
 
-The per-task list is not published. It names the repositories and pull requests of
-individual contributors, and several of those repositories sit under personal accounts,
-so releasing it is a question of consent rather than of licensing. The aggregates above
-carry the numbers the figures rest on.
+For the benchmark collection, we publish only the collection method and aggregate
+statistics. The per-task list, issue text, reference patches, and tests are not released.
+Any future release will require a review of the applicable licenses and permissions,
+alongside privacy considerations. The aggregates above carry the numbers the figures
+rest on.
+
+The PR-template policy file contains counts and a yes/no classification. Text excerpts
+from pull request bodies are excluded from the public export.
 
 ## Privacy
 
