@@ -4,12 +4,14 @@ Datasets behind the figures in the perspective paper. Scope is deliberate: what 
 three figures rest on, and nothing else. Survey responses, raw pull request caches, and
 the organizers' bounty list stay outside this repository.
 
-Last verified: 2026-10-06
+Last verified: 2026-10-08
 
 The disclosure, interface-survival, and test-suite files were re-measured on
 2026-10-06, with disclosure counted through 2026-09-30 so that the last quarter is
 complete. The task aggregates were re-resolved the same day for the bounties that were
-still open in August, which moved one more bounty into the usable set.
+still open in August, which moved one more bounty into the usable set. The three
+community survey files were added on 2026-10-08 from a 2026-10-07 snapshot of a survey
+that was still collecting responses.
 
 ## Contents
 
@@ -42,7 +44,35 @@ Files are in [figures/](figures/), grouped by the figure they support.
 | `task_pipeline_by_year.csv` | Counts at each stage from bounty to usable task, per year, and what the reference solutions change |
 | `task_solution_size.csv` | Distribution of lines changed across the 431 reference solutions |
 | `bounties_by_year.csv` | Bounties offered per year, aggregated |
-| `ai_attitudes.csv` | Topic counts from the free-text AI questions of the 2026 surveys |
+| `ai_attitudes.csv` | Topic counts from the free-text AI questions of the 2026 unitaryHACK surveys, 9 maintainers and 16 contributors |
+
+### Community survey
+
+| File | Contents |
+|---|---|
+| `survey_tasks.csv` | How respondents perform each task in their quantum workflow, manually or with AI assistance |
+| `survey_verification.csv` | How respondents who use AI to write or debug code verify that the result is correct |
+| `survey_agreement.csv` | Agreement with three statements about the accuracy and usefulness of AI assistants |
+
+These are the three questions behind the figure panels and nothing else from that
+survey. They come from the 2026 Quantum Open Source Software Survey run by the Unitary
+Foundation, as a snapshot taken on 2026-10-07 while collection was still open. The
+survey was announced to run through 29 October 2026 and the Foundation publishes its own
+summary of the full results, so these counts are a mid-collection cut rather than the
+final ones.
+
+Denominators differ by question, because respondents drop out as the survey proceeds, so
+each file carries its own answered count. `survey_tasks.csv` and
+`survey_verification.csv` come from questions that allowed several answers, so their
+shares overlap and do not sum to 100; in the first of them a respondent can report both
+modes for one task. The method worded "Automation verification" is reproduced as the
+survey worded it and is not distinguished from automated tests by the instrument. In
+`survey_agreement.csv` the `rated` column is the row total minus the respondents who
+answered "not applicable", and it is the denominator the paper uses.
+
+Survey respondents are the quantum software community at large. They are not the
+contributors to the 19 repositories measured in the disclosure files above, so adoption
+in one and recorded disclosure in the other describe different populations.
 
 The per-task list is not published. It names the repositories and pull requests of
 individual contributors, and several of those repositories sit under personal accounts,
@@ -63,6 +93,10 @@ repositories and pull requests; it is replaced by the two aggregate files above.
 `ai_attitudes.csv` is derived from participant surveys. It carries topic counts over 9
 maintainers and 16 contributors and no response text; free-text answers are not published
 in any form. The underlying responses stay with the organizers.
+
+The three `survey_*.csv` files are counts over respondents to the community survey. They
+carry no response text and no respondent attribute, so no answer can be traced to a
+person. Free-text answers to that survey are not published here in any form.
 
 ## Reading these numbers
 
@@ -93,6 +127,7 @@ it can be revised as it happens.
 | `ai_disclosure_*.csv` | Quarterly | Projects adding or removing a disclosure field; tools changing what they write into a commit |
 | `task_pipeline_by_year.csv`, `task_solution_size.csv` | After each unitaryHACK event | The next event's bounty list |
 | `ai_attitudes.csv` | After each event that asks about AI | The survey instrument, which changed in 2026 when the AI questions were added |
+| `survey_*.csv` | After each annual community survey closes | The next survey; the 2026 snapshot here predates that survey's own close |
 
 Three things are absent and would have to be collected rather than recomputed.
 
