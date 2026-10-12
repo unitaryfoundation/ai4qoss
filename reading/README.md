@@ -3,7 +3,7 @@
 A reading list. One line per entry, saying what the work is and why it belongs
 here; additions welcome on the same terms.
 
-Last verified: 2026-08-27
+Last verified: 2026-10-12
 
 ## Community and research software
 
@@ -24,7 +24,7 @@ Last verified: 2026-08-27
   [Gentoo's ban](https://wiki.gentoo.org/wiki/Project:Council/AI_policy) (2024),
   [QEMU's provenance-based decline](https://www.qemu.org/docs/master/devel/code-provenance.html)
   (relaxation under discussion since May 2026), and
-  [Fedora's allow-with-disclosure](https://docs.fedoraproject.org/en-US/council/policy/ai-policy/)
+  [Fedora's allow-with-disclosure](https://docs.fedoraproject.org/en-US/council/policy/ai-contribution-policy/)
   (2025). The range of positions a QOSS project can adopt.
 
 ## Benchmarks and evaluation
@@ -35,8 +35,11 @@ Last verified: 2026-08-27
   memorization caveat for any static coding benchmark.
 - Terminal-Bench / TB-Science (tbench.ai). Agent benchmarks with programmatic
   verification; the science edition accepts community task contributions.
-- SciCode, arXiv:2407.13168. Scientist-curated research-coding problems with
-  executable tests; the best model at release solved 4.6% of the main problems.
+- SciCode, arXiv:2407.13168 (NeurIPS 2024 Datasets and Benchmarks). Scientist-curated
+  research-coding problems with executable tests; 338 subproblems from 80 main problems.
+  In the published version the best model tested, o1-preview, solved 7.7% of the main
+  problems in the most realistic setting. The arXiv abstract still reports the 4.6% that
+  Claude 3.5 Sonnet reached at submission.
 - CORE-Bench, arXiv:2409.11363. Agents reproduce the computational results of 90
   published papers from the papers' own code and data; reproduction as a
   programmatically checkable target.

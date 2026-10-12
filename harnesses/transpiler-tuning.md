@@ -1,6 +1,6 @@
 # Transpiler pass tuning
 
-Last verified: 2026-08-28
+Last verified: 2026-10-12
 Status: draft
 
 ## Task
@@ -82,13 +82,14 @@ verification is the piece with the hardest constraint.
 One project has published its attempt to raise that constraint. ucc, the Unitary
 Foundation's compiler collection, verifies compilation in its own test suite by
 comparing state vectors, which holds those tests to small circuits. In November 2024
-it opened an issue asking how to verify large compiled circuits and offered a bounty
+it opened an issue asking how to verify large compiled circuits, and attached a
+unitaryHACK bounty to it in May 2025
 ([ucc#62](https://github.com/unitaryfoundation/ucc/issues/62)). Over 26 comments a
-contributor tried QCEC, PyZX, and Giallar. QCEC verified 100-qubit random Clifford
-circuits from ucc's tests in more than 24 hours on a 96-core machine, handled about 20
+contributor tried QCEC, PyZX, and Giallar. QCEC did not finish a 100-qubit random
+Clifford circuit from ucc's tests within 24 hours on a 96-core machine, handled about 20
 qubits within an hour, and scaled worse than linearly above that; Giallar exhausted 64
 GB above 20 qubits; none of the three reached 50 qubits. The maintainers closed the
-issue in June 2025 by paying the bounty for the search, writing that they had not been
+issue in June 2025 and awarded the bounty for the search, writing that they had not been
 sure it would be possible. As of this writing ucc's tests still compare state vectors.
 
 Read that against the favorable case rather than as a verdict on QCEC. Random Clifford
@@ -106,9 +107,10 @@ and permutation circuits at 9, 11, and 65 qubits, orders of magnitude faster tha
 SAT-based optimization, and reduces two-qubit gate depth and count against the SABRE
 routing heuristic at up to 133 qubits
 ([arXiv:2405.13196](https://arxiv.org/abs/2405.13196)). Those passes ship in the
-separate `qiskit-ibm-transpiler` package rather than in Qiskit itself, and the
-released versions carry lower limits than the paper reports, with the block sizes
-they accept stated in that package's documentation. For T count, AlphaTensor-Quantum
+separate `qiskit-ibm-transpiler` package rather than in Qiskit itself. The released
+version caps Clifford synthesis at nine-qubit blocks against the eleven the paper
+reports, while linear-function and permutation synthesis ship at the paper's 9 and 65;
+the accepted block sizes are stated in that package's documentation. For T count, AlphaTensor-Quantum
 improves on prior optimization methods across arithmetic benchmarks by casting the
 problem as tensor decomposition
 ([arXiv:2402.14396](https://arxiv.org/abs/2402.14396);

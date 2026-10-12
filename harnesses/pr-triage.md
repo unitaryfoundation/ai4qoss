@@ -26,6 +26,14 @@ project's behalf.
 3. The agent lists open questions for the maintainer rather than verdicts.
 4. The maintainer reviews and decides.
 
+What the agent is given is fixed per project: the contributing guide and whatever
+conventions documents the project keeps, the results of the step 1 gates, and the output
+of any verifier the project already runs in continuous integration (see
+[../verifiers/](../verifiers/)). A summary written from the diff alone restates the diff.
+One written against the project's own rules and against verification that has already
+run is what a reviewer can spot-check, and holding those inputs fixed is also what makes
+the back-test below mean anything.
+
 ## Verification
 
 There is no automatic verification of the output of step 2, which is what separates this

@@ -1,6 +1,6 @@
 # Issue to PR
 
-Last verified: 2026-08-28
+Last verified: 2026-10-12
 Status: draft
 
 ## Task
@@ -55,7 +55,7 @@ The only repository-level results on quantum software come from AInsteinBench
 ([arXiv:2512.21373](https://arxiv.org/abs/2512.21373)), which scores agents on merged
 pull requests from six scientific codebases. Its released dataset holds 38 Qiskit and
 47 PySCF tasks, though the reported percentages imply 37 scored Qiskit instances. Each
-task carries the linked upstream issue, the maintainers' own test patch, and a gold
+task carries the issue or pull request description, the maintainers' own test patch, and a gold
 fix; scoring is binary on the full test suite in a per-instance container. Qiskit is
 the highest-scoring domain in the results we checked: Claude 4.5 Opus resolves 67.6
 percent of the Qiskit tasks and 38.3 percent of the PySCF tasks, against 44.0 percent
@@ -66,8 +66,9 @@ one column of a general scientific-computing benchmark, which no purpose-built q
 software benchmark currently provides. Coverage stops at Qiskit and PySCF, with no
 repository-level numbers for
 Cirq, PennyLane, QuTiP, Stim, tket, or mitiq. The tasks are public merged pull
-requests that predate the models' training data, and the paper reports no
-contamination analysis. And each task is scored on a single attempt.
+requests, the Qiskit ones spanning April 2022 to October 2025, so the most recent do
+not predate the training data of the models evaluated. The paper reports no
+contamination analysis, no pass@k, and no attempt budget.
 
 For repairs to user-level quantum programs rather than library source, a study of 67
 real Qiskit defects from Bugs4Q reports pass@10 of 48.8 percent for the strongest

@@ -1,6 +1,6 @@
 # Version migration
 
-Last verified: 2026-08-28
+Last verified: 2026-10-12
 Status: draft
 
 ## Task
@@ -41,23 +41,25 @@ migration the way this card verifies one, by running the target project's test s
 the pinned version.
 
 The published work on Qiskit migration with language models detects migration
-scenarios in synthetic snippets and proposes refactorings, which three human judges
-then grade; no code is executed and no test suite is involved
-([arXiv:2606.20173](https://arxiv.org/abs/2606.20173), and its predecessor
-[arXiv:2506.14535](https://arxiv.org/abs/2506.14535) on 25 snippets targeting Qiskit
+scenarios in synthetic snippets and proposes refactorings, which human judges then
+grade; no code is executed and no test suite is involved
+([arXiv:2606.20173](https://arxiv.org/abs/2606.20173), graded by three judges, and its
+predecessor [arXiv:2506.14535](https://arxiv.org/abs/2506.14535) by two, on 25 snippets
+targeting Qiskit
 0.46). The stronger of the two models graded correct on roughly three quarters of the
 scenarios it detected, and returned empty or invalid code on 15 percent of scenarios
 against 61 percent for the weaker model. Those figures describe the quality of
 suggestions as human judges rated them. Neither paper reports tokens, wall-clock time,
-or iteration counts, and neither states which Qiskit version it targets, so
-quantum-specific cost figures do not exist and the scope of the results is
+or iteration counts, and the newer one does not state which Qiskit version it targets,
+so quantum-specific cost figures do not exist and the scope of the newer results is
 unspecified.
 
 What has been measured with an execution-based criterion on quantum software is the
 underlying difficulty rather than the migration itself. Across Qiskit 0.43, 1.3, and
 2.0, with 50 tasks and 17 models at 1,350 executions each, pass@1 ranges from 0.02 to
-0.85 depending on the model and the target version, and giving the model the relevant
-documentation repairs only 0.19 to 0.59 of its failures
+0.85 across the 16 models run through a matched REST interface, depending on the model
+and the target version, and giving the model the relevant documentation repairs only
+0.19 to 0.59 of repair attempts
 ([arXiv:2607.04072](https://arxiv.org/abs/2607.04072)). A migration loop inherits that
 spread: the model's grasp of the target version bounds what any number of iterations
 can reach.
@@ -65,7 +67,8 @@ can reach.
 Migration studies outside quantum software do use an execution-based criterion and
 give the closest available expectation. Repository-level Java migration resolves
 roughly half of projects: 53.3 percent on the harder setting with the strongest model
-tested, at 34 to 59 model calls per repository (MigrationBench,
+tested, at roughly 53 to 59 model calls per repository for the configurations that
+reach it (MigrationBench,
 [arXiv:2505.09569](https://arxiv.org/abs/2505.09569)), and 52.3 percent of 228
 repositories for the best model in FreshBrew
 ([arXiv:2510.04852](https://arxiv.org/abs/2510.04852)). Python library-to-library
@@ -77,8 +80,8 @@ correct while 16 of the 25 migrations that had usable coverage passed their test
 edit and a passing suite is the reason this card's verification is the test suite.
 
 A rule-based comparison exists for Qiskit specifically:
-[flake8-qiskit-migration](https://github.com/frankharkins/flake8-qiskit-migration)
+[flake8-qiskit-migration](https://github.com/qiskit-community/flake8-qiskit-migration)
 flags deprecated usage for the 1.0 and 2.0 transitions. It publishes no accuracy
-numbers and its documentation states that several of its checks are heuristic and
-produce false positives. Running it first is cheap and narrows what the loop above has
-to handle.
+numbers, and its documentation states that three of its rules detect heuristically, by
+matching method names, so that false positives are possible though unlikely. Running it
+first is cheap and narrows what the loop above has to handle.

@@ -9,5 +9,7 @@ Policy templates that QOSS projects can copy and adapt.
 - [agents-md-template.md](agents-md-template.md): a starting point for a repository's
   AGENTS.md file.
 - [ci-gates.md](ci-gates.md): checks a repository can enforce mechanically.
+- [contributor-pipeline.md](contributor-pipeline.md): practices for projects and event
+  organizers who recruit maintainers from their contributors.
 
 Last verified: 2026-10-07

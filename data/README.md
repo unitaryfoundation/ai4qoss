@@ -4,14 +4,31 @@ Datasets behind the figures in the perspective paper. Scope is deliberate: what 
 three figures rest on, and nothing else. Survey responses, raw pull request caches, and
 the organizers' bounty list stay outside this repository.
 
-Last verified: 2026-10-08
+Last verified: 2026-10-12
 
-The disclosure, interface-survival, and test-suite files were re-measured on
-2026-10-06, with disclosure counted through 2026-09-30 so that the last quarter is
-complete. The task aggregates were re-resolved the same day for the bounties that were
-still open in August, which moved one more bounty into the usable set. The three
-community survey files were added on 2026-10-08 from a 2026-10-07 snapshot of a survey
-that was still collecting responses.
+## When each file was measured
+
+The files do not share one date, and none of them carries its own timestamp, so this is
+the only record of it. "Measured" is when the script last ran against its source;
+"covers" is the period the numbers describe, where that differs.
+
+| File | Measured | Covers |
+|---|---|---|
+| `corpus_size.csv` | 2026-10-06 | GitHub code search and the preceding 30 days of PyPI installs, both as of that date |
+| `api_survival.csv` | 2026-10-06 | release tags per year from each project's first to its latest 2026 release |
+| `api_churn_summary.csv` | 2026-08-23 | release notes up to that date |
+| `qubit_counts.csv`, `qubit_by_module.csv`, `circuit_kind.csv` | 2026-10-06 | the test suites as of that date |
+| the four `ai_disclosure_*.csv` | 2026-10-06 | commits and pull requests through 2026-09-30, so that the last quarter is complete |
+| `task_pipeline_by_year.csv`, `task_solution_size.csv` | 2026-10-06 | the 2022 to 2026 unitaryHACK events, re-resolved on that date for the bounties still open in August, which moved one more bounty into the usable set |
+| `bounties_by_year.csv` | 2026-08-23 | the 2022 to 2026 events, all concluded |
+| `ai_attitudes.csv` | 2026-08-23 | the 2026 post-event surveys, closed |
+| the three `survey_*.csv` | 2026-10-08 | a 2026-10-07 snapshot of a survey still collecting responses |
+
+Three files were not part of the October re-measurement. For `bounties_by_year.csv` and
+`ai_attitudes.csv` that changes nothing, because both describe events that had already
+concluded when they were measured. `api_churn_summary.csv` counts deprecations per year
+from release notes that have grown since August, so its four numbers are an August
+measurement.
 
 ## Contents
 

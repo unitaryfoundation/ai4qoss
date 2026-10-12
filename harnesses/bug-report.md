@@ -1,6 +1,6 @@
 # Bug report
 
-Last verified: 2026-08-28
+Last verified: 2026-10-12
 Status: draft
 
 ## Task
@@ -44,21 +44,22 @@ maintainer time it consumes. No quantum project publishes counts of the AI-gener
 issues it receives. The numbers below come from adjacent settings and bound what to
 expect.
 
-The reproduction step is the hard part. On 1,983 real GitHub issues, the best agent
-produced a test that genuinely fails before the fix and passes after it in 18.5
-percent of cases (SWT-Bench,
-[arXiv:2406.12952](https://arxiv.org/abs/2406.12952)). LIBRO reproduces 251 of 750
+The reproduction step is the hard part. On SWT-Bench-Lite, the 276-issue subset the
+authors evaluate on for cost reasons, the best agent produced a test that genuinely
+fails before the fix and passes after it in 18.5 percent of cases (SWT-Bench,
+[arXiv:2406.12952](https://arxiv.org/abs/2406.12952); the full benchmark holds 1,983
+real GitHub issues). LIBRO reproduces 251 of 750
 Defects4J bugs, or 33 percent, and 32 percent of a 31-bug set postdating its model's
 training data ([ICSE 2023](https://doi.org/10.1109/ICSE48619.2023.00194)); the same
-method scores 14.1 percent on SWT-Bench, so the higher figure describes Defects4J
+method scores 14.1 percent on SWT-Bench-Lite, so the higher figure describes Defects4J
 rather than the method. An agent asked to file a report will therefore fail this card's
 verification most of the time, which is the intended behavior: the loop reports that it
 cannot reproduce rather than filing.
 
 What an unfiltered stream of AI-assisted reports costs the receiving side is
 documented in curl's decision to end its bug bounty on 31 January 2026. The share of
-submissions that were confirmed vulnerabilities fell from above 15 percent over the
-program's lifetime to below 5 percent in 2025, with roughly 20 percent of submissions
+submissions that were confirmed vulnerabilities fell from above 15 percent in the years
+before 2025 to below 5 percent in 2025, with roughly 20 percent of submissions
 judged low-quality AI-generated reports, arriving at about two per week, each engaging
 three or four people for 30 minutes and sometimes up to three hours
 ([Stenberg, July 2025](https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/),
@@ -72,10 +73,11 @@ falling hit rate.
 
 Confirmation rates published by quantum bug-finding tools range from 10 to 100
 percent, and the spread measures how much the authors filtered before filing rather
-than how good the tools are. At one end, LintQ found 216 real bugs in Qiskit programs
-and filed 70 of them, stating that reporting adequately is itself time-consuming; 7
+than how good the tools are. At one end, LintQ identified 216 legitimate programming
+problems in Qiskit programs, from a sample of its warnings, and filed 70 of them,
+stating that reporting adequately is itself time-consuming; 7
 were confirmed or fixed ([FSE 2024](https://doi.org/10.1145/3660802)). At the other,
-KQFuzz filed 13 curated reports against Qiskit, PennyLane, and Cirq and had all 13
+KQFuzz filed 13 reports against Qiskit, PennyLane, and Cirq and had all 13
 confirmed ([arXiv:2607.25647](https://arxiv.org/abs/2607.25647)); Fuzz4All filed 11
 Qiskit bugs with 8 confirmed
 ([arXiv:2308.04748](https://arxiv.org/abs/2308.04748)). LintQ's numbers are the useful
@@ -88,9 +90,10 @@ percent through automated testing
 ([arXiv:2603.22789](https://arxiv.org/abs/2603.22789)).
 
 What maintainers want from a report was already documented in 2008: among surveyed
-developers, 83 percent ranked steps to reproduce among the most useful contents of a
-report, and 79 percent ranked errors in those steps among the most severe problems,
-while 10 percent ranked duplicates that way and none ranked spam that way
+developers who had used them, 83 percent ranked steps to reproduce among the three most
+helpful contents of a report, and 79 percent of those who had met errors in those steps
+ranked that among the most severe problems, against 10 percent for duplicates and none
+for spam
 ([Bettenburg et al., FSE 2008](https://doi.org/10.1145/1453101.1453146)). Those are
 ratings of importance and severity rather than counts of what reports contain, and the
 survey predates AI-assisted submissions, so the last figure says that spam was not

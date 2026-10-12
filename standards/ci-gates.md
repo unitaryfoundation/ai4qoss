@@ -15,10 +15,11 @@ enforcing a gate, replace each third-party tag with the full 40-character commit
 A tag can later be moved to point at different code; a commit SHA identifies one exact
 version forever. This is a real attack path: in March 2025 the version tags of the
 widely used `tj-actions/changed-files` action were repointed at a malicious commit
-([CVE-2025-30066](https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction)),
-which leaked CI secrets from roughly 23,000 repositories that referenced it by tag.
+([CVE-2025-30066](https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction)).
+The action was referenced by roughly 23,000 repositories, and in dozens of them the
+compromised code dumped CI secrets into publicly readable workflow logs.
 
-Last verified: 2026-08-27
+Last verified: 2026-10-12
 
 ## 1. Tests required
 
@@ -87,7 +88,7 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.pull_request.labels.*.name, 'bugfix')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - uses: dorny/paths-filter@v4 # pin to a commit SHA
@@ -243,6 +244,8 @@ job and step level.
 - Publish the gates in CONTRIBUTING so contributors, human or agent, can run them
   locally before opening the PR.
 - Set an explicit `permissions:` block in every workflow, as the examples do.
-- The current majors used above (paths-filter v4, github-script v9) run on Node 24 and
-  need Actions Runner 2.327.1 or newer; GitHub-hosted runners qualify, and the
-  previous majors remain available for older self-hosted fleets.
+- The majors used above (checkout v7, paths-filter v4, github-script v9) run on Node 24
+  and need Actions Runner 2.327.1 or newer; GitHub-hosted runners qualify. Node 20 was
+  removed from the runner images in September 2026, so an action still declaring
+  `node20`, such as `actions/checkout@v4`, is forced onto Node 24 with a job warning
+  rather than pinned to the runtime it was tested against.

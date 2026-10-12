@@ -9,7 +9,8 @@ community. This project follows the
 1. **Disclose AI involvement.** This repository follows its own
    [AI contribution policy](standards/ai-contribution-policy.md): state in the pull
    request whether and how AI tools were used. AI-assisted contributions are welcome as
-   long as they are disclosed.
+   long as they are disclosed. The same applies to us, and
+   [AI_use_this_repository.md](AI_use_this_repository.md) is our own statement.
 2. **Date what you touch.** Every content page carries a `Last verified:` line. Update it
    when you have actually checked the content, and only then.
 3. **Small pull requests.** One card, one catalog entry, or one policy change per PR.

@@ -1,6 +1,6 @@
 # Documentation against a versioned API
 
-Last verified: 2026-08-28
+Last verified: 2026-10-12
 Status: draft
 
 ## Task
@@ -56,8 +56,9 @@ against a pinned quantum framework version with an execution gate.
 
 The staleness the loop is built around has been measured directly in published work. Across Qiskit 0.43,
 1.3, and 2.0, with 50 tasks, 17 models, and 1,350 executions per model, pass@1 ranges
-from 0.02 to 0.85 depending on model and target version, and supplying the relevant
-documentation repairs only 0.19 to 0.59 of the failures
+from 0.02 to 0.85 across the 16 models run through a matched REST interface, depending
+on model and target version, and supplying the relevant documentation repairs only 0.19
+to 0.59 of repair attempts
 ([arXiv:2607.04072](https://arxiv.org/abs/2607.04072)). The second number is the one
 that shapes this card: retrieval helps and does not rescue a model that has the wrong
 version in mind, so the execution gate carries the weight.
@@ -75,8 +76,9 @@ reached a peak of 90.2 percent on a 50-question benchmark with one open-weight m
 and hybrid retrieval, against 56.9 percent for a proprietary baseline
 ([arXiv:2603.15538](https://arxiv.org/abs/2603.15538)); that benchmark has a fixed
 answer key, so it bounds documentation retrieval rather than documentation writing.
-The same paper attempted two real Qibo issues, #1699 and #1710, and reported the
-attempts qualitatively; both issues were opened by a maintainer and both remain open.
+The same paper attempted two real Qibo issues, #1699 and #1710. It claims the first was
+resolved autonomously and hedges on the second, reports no merged pull request for
+either, and both were opened by a core Qibo developer and both remain open.
 
 For the verification itself, no measurement is needed to justify it, but adoption is uneven
 and worth checking in the target project before assuming the gate exists. A project
