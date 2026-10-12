@@ -1,0 +1,12 @@
+# Python 3.9 or later.
+#
+# The collection scripts use only the standard library, so nothing is needed to
+# run them beyond a Python interpreter and `git` on the PATH.
+#
+# The two exceptions, and the figure scripts, need these:
+
+# unitaryhack/scrub.py, to read the organizers' Numbers exports
+numbers-parser>=4.10
+
+# figures/, to draw the vector panels
+matplotlib>=3.7

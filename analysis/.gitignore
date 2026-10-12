@@ -1,0 +1,22 @@
+# Nothing these scripts produce or consume belongs in the repository. They fetch
+# full pull request bodies and issue text into their working directory, so an
+# unguarded `git add -A` after a run would publish third-party content and, in
+# the survey directories, personal data. Keep this list ahead of the scripts.
+
+_workspace/
+_repos/
+_tmp/
+out/
+clean/
+figures/components/
+
+# Inputs we do not publish, in case anyone places them here.
+unitaryHackData/
+26SurveyData*/
+
+# Caches the fetching scripts write.
+*.jsonl
+*.numbers
+
+__pycache__/
+*.pyc

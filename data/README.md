@@ -153,6 +153,12 @@ pass@1 between 0.02 and 0.85 across 17 models
 
 ## Reproducing
 
-The scripts that produce these files, together with the full method and caveats for each
-measurement, are described in the paper. Figure sources are in the paper's repository
-under `perspective_paper/figures/`.
+The scripts that produce every file here are in [../analysis/](../analysis/), one
+directory per measurement, each with a docstring stating its method, its denominators,
+and the ways it can be wrong. That directory's README says which scripts a reader can run
+from public sources, which need a GitHub token, and which depend on inputs we do not
+publish.
+
+`../analysis/figures/components.py` redraws every panel of the paper's three figures from
+the CSVs in this directory alone, so the figures can be checked against the data without
+anything else.
