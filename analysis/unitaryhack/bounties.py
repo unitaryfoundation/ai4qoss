@@ -25,6 +25,16 @@ OUT.mkdir(exist_ok=True)
 REPO = re.compile(r"github\.com/([\w.-]+/[\w.-]+)")
 
 
+def repo_key(name):
+    """Identity of a repository, for counting.
+
+    GitHub owner and repository names are case-insensitive, and the sheets spell
+    the same repository both ways across years, for example quantumlib/Cirq and
+    quantumlib/cirq. Counting the raw strings reports one repository too many.
+    """
+    return name.lower()
+
+
 def money(v):
     if v is None:
         return None
@@ -86,7 +96,7 @@ def main():
     for year in sorted(per_year):
         rs = per_year[year]
         amts = [float(r[4]) for r in rs if r[4] != ""]
-        repos = {r[2] for r in rs if r[2]}
+        repos = {repo_key(r[2]) for r in rs if r[2]}
         projects = {r[1] for r in rs if r[1]}
         withurl = sum(1 for r in rs if r[3])
         med = sorted(amts)[len(amts) // 2] if amts else 0
@@ -102,15 +112,18 @@ def main():
         w.writerows(ysum)
 
     repo_year = defaultdict(Counter)
+    repo_name = {}
     for r in rows:
         if r[2]:
-            repo_year[r[2]][r[0]] += 1
+            key = repo_key(r[2])
+            repo_year[key][r[0]] += 1
+            repo_name.setdefault(key, r[2])
     with open(OUT / "bounties_by_repo.csv", "w", newline="") as f:
         w = csv.writer(f)
         years = sorted(per_year)
         w.writerow(["repo", *years, "total"])
-        for repo, c in sorted(repo_year.items(), key=lambda kv: -sum(kv[1].values())):
-            w.writerow([repo, *(c.get(y, 0) for y in years), sum(c.values())])
+        for key, c in sorted(repo_year.items(), key=lambda kv: -sum(kv[1].values())):
+            w.writerow([repo_name[key], *(c.get(y, 0) for y in years), sum(c.values())])
 
     print(f"\n{len(repo_year)} distinct repositories across all years")
     print(f"repositories appearing in every year: "

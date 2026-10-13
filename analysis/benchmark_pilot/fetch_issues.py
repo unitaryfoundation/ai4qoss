@@ -122,7 +122,9 @@ def main():
 
     # ------------------------------------------------------------------ coverage
     closed_window = sum(1 for r in rows if r[6] == "yes")
-    repos = Counter(r[0] for r in rows)
+    # GitHub owner and repository names are case-insensitive, so the same
+    # repository can arrive under two spellings and inflate the count.
+    repos = Counter(r[0].lower() for r in rows)
     print(f"\nclosed during the event window ({EVENT_START} to 2026-07-15): "
           f"{closed_window}")
     print(f"the site reports {SITE_CLOSED_BOUNTIES} closed bounties for 2026, so the "
