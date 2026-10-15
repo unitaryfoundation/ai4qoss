@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Make a de-identified working copy of the unitaryHACK records.
 
 The source files under ../unitaryHackData are the organizers' own exports and are

@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Random circuits or structured ones: what do the test suites exercise?
 
 A coding assistant asked for test circuits tends to produce random ones, closer to

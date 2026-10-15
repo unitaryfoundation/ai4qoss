@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Resolve each unitaryHACK bounty to its issue state and the work that closed it.
 
 Input is the organizers' own bounty list (812 URLs over 2022 to 2026, normalized by

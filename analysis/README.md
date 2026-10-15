@@ -6,6 +6,9 @@ states its method, its denominators, and how it can be wrong.
 
 Last verified: 2026-10-11
 
+License: Apache-2.0 ([LICENSE](LICENSE)). Each script carries an SPDX header with
+the copyright, so it stays identifiable after being copied out.
+
 ## Scripts you can run
 
 These read public sources: clones of the projects under study, or the GitHub and PyPI

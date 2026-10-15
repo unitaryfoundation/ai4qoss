@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """API churn: how often each project announces deprecations and breaking changes.
 
 Method. Count entries in each project's own release notes, so the measure reflects

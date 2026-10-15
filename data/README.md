@@ -6,6 +6,9 @@ the organizers' bounty list stay outside this repository.
 
 Last verified: 2026-10-12
 
+License: CC BY 4.0 (see [../LICENSING.md](../LICENSING.md)). These files are often
+downloaded one at a time, so the terms travel only through this page.
+
 ## When each file was measured
 
 The files do not share one date, and none of them carries its own timestamp, so this is

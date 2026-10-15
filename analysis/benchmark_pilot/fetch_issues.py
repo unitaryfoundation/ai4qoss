@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Collect the unitaryHACK 2026 issues from GitHub, for the benchmark pilot.
 
 unitaryhack.dev publishes the rules, the 46 participating projects and aggregate

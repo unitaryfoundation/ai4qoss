@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Aggregate the per-task tables into the two files that are published.
 
 The per-task lists (out/tasks.csv, out/task_scoring.csv) name contributors'

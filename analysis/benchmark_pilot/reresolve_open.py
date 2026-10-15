@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Bring the bounty resolution forward without refetching everything.
 
 Drops from out/resolved.jsonl the bounties that were still open, or not retrievable, at

@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Do the reference solutions touch tests?
 
 For a task to be scored automatically, the merged change needs a test the harness can

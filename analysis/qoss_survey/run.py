@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """2026 Quantum Open Source Software Survey: the questions this paper uses.
 
 Source: ../26SurveyData_All_261007/, the SurveyMonkey summary export taken on

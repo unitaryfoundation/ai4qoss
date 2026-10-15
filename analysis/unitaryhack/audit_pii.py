@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Re-check the source records and the clean copy for identifying material.
 
 Run after any change to the sources. Reports counts and column names only; it never

@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """unitaryHACK participant and maintainer surveys, 2023 to 2026.
 
 Reads only the de-identified copies in ./clean. 2022 is excluded: its exit survey has

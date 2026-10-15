@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """AI disclosure in commit messages, over time.
 
 What is counted. A commit is "disclosed" when its message carries a machine-written

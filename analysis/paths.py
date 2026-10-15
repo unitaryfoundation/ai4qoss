@@ -1,3 +1,6 @@
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
+
 """Where the scripts in this directory read and write.
 
 Every script resolves its paths through this module, so a checkout can be pointed

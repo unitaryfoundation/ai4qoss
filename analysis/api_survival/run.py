@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """API survival: how much of a project's public API from year t still exists today.
 
 Motivation. A language model writes code against the API it saw in training, which is

@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """unitaryHACK bounties, 2022 to 2026, normalized to one row per bounty.
 
 The organizers' sheets changed shape over the years: 2022 lists one bounty per row,

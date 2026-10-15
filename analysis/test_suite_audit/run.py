@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Test-suite audit: how large are the circuits that quantum test suites actually run?
 
 Method. Scan the test files of the major frameworks for literal qubit counts in the

@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Does test size follow what the code under test needs, or a shared ceiling?
 
 A pooled statement such as "99 percent at or below 20 qubits" mixes two situations.

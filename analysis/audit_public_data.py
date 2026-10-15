@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Audit everything staged for the public repository before it is committed.
 
 Checks each published CSV for material that identifies a person: email addresses,

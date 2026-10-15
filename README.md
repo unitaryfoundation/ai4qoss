@@ -48,4 +48,8 @@ A `CITATION.cff` will be added with the first tagged release.
 
 ## License
 
-Under discussion (suggested: CC BY 4.0 for documents, Apache 2.0 for code).
+Copyright 2026 Unitary Foundation. Documents and data are under
+[CC BY 4.0](LICENSE), the policy templates in [`standards/`](standards/) are under
+CC0 1.0 so they can be copied without attribution, and the code in
+[`analysis/`](analysis/) is under Apache-2.0. [LICENSING.md](LICENSING.md) gives
+the breakdown and what these licenses do not cover.

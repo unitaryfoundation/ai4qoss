@@ -13,3 +13,6 @@ Policy templates that QOSS projects can copy and adapt.
   organizers who recruit maintainers from their contributors.
 
 Last verified: 2026-10-07
+
+License: CC0 1.0 ([LICENSE](LICENSE)). Copy these into your own project and adapt
+them; no attribution is required.

@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """AI disclosure in pull request descriptions.
 
 Complements commits.py in two ways: it sees pull requests that were never merged, whose

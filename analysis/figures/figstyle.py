@@ -1,3 +1,6 @@
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
+
 """Single source of truth for the paper's figure style and composite layout.
 
 Imported by `components.py` (which draws geometry-only vector components) and by

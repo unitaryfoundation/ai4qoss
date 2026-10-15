@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Second pass: find the change that closed each bounty issue.
 
 The first pass only looked for `cross-referenced` and `connected` timeline events and

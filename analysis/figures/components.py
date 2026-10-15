@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Geometry-only vector panels for the paper's three figures.
 
 Each panel is its own matplotlib figure at the exact size it occupies in the

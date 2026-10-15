@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Third pass: ask GraphQL what actually closed each bounty issue.
 
 The REST timeline cannot answer this. It never returns `cross-referenced` events, and

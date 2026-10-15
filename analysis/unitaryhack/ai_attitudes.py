@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """What the 2026 unitaryHACK surveys say about AI.
 
 2026 is the first year either survey asked about AI: the maintainer form added a

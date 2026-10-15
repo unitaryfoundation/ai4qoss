@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright 2026 Unitary Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Corpus size: how much public code imports each library.
 
 Two independent proxies, because neither is trustworthy alone.
