@@ -44,7 +44,8 @@ Per-directory maintainers may be listed here as the project grows.
 
 ## Citing
 
-A `CITATION.cff` will be added with the first tagged release.
+Cite the repository as given under Attribution in [LICENSING.md](LICENSING.md).
+A BibTeX entry for the paper will go here once it is posted.
 
 ## License
 
