@@ -3,7 +3,7 @@
 A reading list. One line per entry, saying what the work is and why it belongs
 here; additions welcome on the same terms.
 
-Last verified: 2026-10-12
+Last verified: 2026-10-19
 
 ## Community and research software
 
@@ -20,6 +20,23 @@ Last verified: 2026-10-12
 - METR developer study, arXiv:2507.09089. Randomized trial on experienced developers
   in large open-source repositories: early-2025 AI tools slowed them by 19% while
   they estimated a 20% speedup.
+- Agentic coding pull requests, Watanabe et al., ACM Trans. Softw. Eng. Methodol. 35,
+  1 (2026); arXiv:2509.14745. 567 pull requests made with an agentic coding tool across
+  157 open-source projects: 83.8% were eventually merged, but only 54.9% of those went
+  in unmodified. Agents were used mostly for refactoring, documentation, and testing.
+- Baltes, Cheong and Treude, "An Endless Stream of AI Slop", IEEE Softw. (2026);
+  arXiv:2603.27249. Qualitative study of 1,154 Reddit and Hacker News posts, coded into
+  review friction, quality degradation, and systemic forces. Frames AI slop as a tragedy
+  of the commons: the productivity gain is private and the review cost is not.
+- Afroz et al., "AI Slop is DDoSing Open Source", arXiv:2607.04003. Bayesian structural
+  time series over 294 repositories and more than two million pull requests and issues.
+  Volume rose through 2025 while merge rates fell, with an 18.18% drop for one-time
+  contributors against the counterfactual; 11 remediation strategies validated by 229
+  practitioners.
+- Lara-Martín and Pérez-Castillo, "Entangle: Uncovering Collaboration in the GitHub
+  Quantum Software Ecosystem", IEEE QCE 2026; arXiv:2609.28349. Reports that 81.7% of
+  the public quantum repositories surveyed have maintenance resting on a single
+  contributor. The only quantitative picture of who maintains this ecosystem.
 - AI-contribution policies in large open-source projects:
   [Gentoo's ban](https://wiki.gentoo.org/wiki/Project:Council/AI_policy) (2024),
   [QEMU's provenance-based decline](https://www.qemu.org/docs/master/devel/code-provenance.html)
@@ -53,6 +70,20 @@ Last verified: 2026-10-12
 - AInsteinBench, arXiv:2512.21373. Repository-level agent tasks built from maintainer
   pull requests in six production scientific codebases, quantum computing and quantum
   chemistry included.
+- Agentic leaderboards (Unitary Foundation, October 2026). Challenge harnesses for
+  problems whose answer a program can check, with a public board so the current best
+  becomes everyone else's starting line. The index covers ECDSA.fail, built in May 2026
+  on Google's zero-knowledge proof checker, where the community reached a Pareto front
+  reported as 68% better than Google's; stabilizer rank decompositions; Clifft's circuit
+  optimizer; and hardware benchmarks on Metriq. The QEC Challenge is the error-correction
+  board.
+- Metriq, arXiv:2603.08680. Open cross-vendor platform for benchmarking quantum
+  computers: definition, execution, collection, and public presentation in one workflow,
+  with released results from more than ten machines and a composite Metriq Score.
+- Quantum-Harbor, arXiv:2609.17439. Evaluates agents on quantum engineering tasks by
+  verifying scientific results against recorded data or fresh hidden evaluations, and
+  separates scientific errors from submission failures. The scoring design a repository
+  benchmark has to copy.
 
 ## AI in the quantum stack
 
@@ -69,6 +100,28 @@ Last verified: 2026-10-12
 - PyTheus, arXiv:2210.09980; Quantum 7, 1204 (2023). Open-source framework
   discovering interpretable photonic quantum-experiment designs; AI discovery shipped
   as software.
+- Verifiable structure for agentic compilation, arXiv:2610.23832. Khattar, Rubin,
+  Gidney, Broughton, Low and Babbush (Google) constrain bottleneck subroutines to
+  reversible classical logic, phasing, and measurement-based uncomputation, so that
+  approximate synthesis can be certified by fuzz testing. Applied to 1/sqrt(x) in the
+  Coulomb operator, Reed-Solomon decoding, and look-up tables for chemistry. The
+  verifier is what makes the agentic search usable, which is this repository's premise.
+- LLM circuit discovery, arXiv:2610.22367. Gu, Kemeny, Yelin and Lukin (Harvard) run an
+  evolutionary loop in which the model proposes circuits and an evaluator independent of
+  the model verifies and scores each one. Seven of eight tasks lower both Toffoli and
+  qubit counts against the state of the art; the eighth finds a new reversible
+  architecture for prime-field modular inversion.
+- Meta-designing quantum experiments, Arlt et al., Nat. Mach. Intell. 8, 148 (2026). A
+  transformer trained on millions of synthetic states and their blueprints writes
+  human-readable Python that generates whole families of experiments, rather than one
+  solution at a time, recovering known design principles and generalizing past them.
+- Alexeev et al., "Artificial intelligence for quantum computing", Nat. Commun. 16,
+  10829 (2025); arXiv:2411.09131. Twenty-eight authors reviewing AI across the quantum
+  computing stack, from device design to applications. The field-level review this
+  Perspective sits beside.
+- NVQLink (NVIDIA, 2025). GPU interconnect for running a learned decoder inside the
+  error-correction cycle. AlphaQubit above is the accuracy side of decoding; this is the
+  latency side, which is what kept learned decoders off real machines.
 
 ## Formalization in QI
 
