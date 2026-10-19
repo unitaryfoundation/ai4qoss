@@ -5,11 +5,11 @@ merged pull request is the reference solution. Existing quantum coding benchmark
 snippet-level generation or question answering (see [reading/](../reading/)); these tasks
 are drawn from changes that maintainers accepted into their projects.
 
-Last verified: 2026-10-08
+Last verified: 2026-10-19
 
 ## Status
 
-A pilot collection of 431 candidate tasks has been assembled from five unitaryHACK
+A pilot collection of 417 candidate tasks has been assembled from five unitaryHACK
 events (2022 to 2026). Stage counts per year are in
 [../data/figures/task_pipeline_by_year.csv](../data/figures/task_pipeline_by_year.csv).
 
@@ -22,15 +22,22 @@ from an event's bounty list.
 | | count |
 |---|---|
 | bounties listed by the organizers | 812 |
-| issue closed | 677 |
-| closed by a merged pull request | 439 |
-| issue body long enough to serve as a prompt, with a merged solution | 431 |
-| solution changes a test file | 281 |
+| distinct issues among them | 763 |
+| issue closed | 648 |
+| closed by a merged pull request | 425 |
+| issue body long enough to serve as a prompt, with a merged solution | 417 |
+| solution changes a test file | 275 |
 
-Counts are as of 2026-10-06. Reference solutions have a median of 307 changed lines, and
-a quarter of them change more than 658. The share of bounties reaching a usable task
-rises from 48 percent for 2022 to 66 percent for 2026, as older records lose
-traceability through repository renames and deleted issues.
+The first row counts bounties and the rest count distinct issues, because the organizers
+sometimes list the same issue twice in one year or carry it into the next. Resolving each
+repository to its current name and then deduplicating on repository and issue number
+removes 34 such repeats from the bounty list and 14 from the usable tasks.
+
+Counts are as of 2026-10-06, with repository names resolved on 2026-10-19. Reference
+solutions have a median of 300 changed lines, and a quarter of them change more than 631.
+The share of bounties reaching a usable task rises from 42 percent for 2022 to 65 percent
+for 2026, as older records lose traceability through repository renames and deleted
+issues.
 
 ## What is not done yet
 
@@ -46,11 +53,11 @@ carries a regression test, fail-then-pass against that test is the criterion: it
 be shown to fail at the parent commit and pass after the change. That rule does not
 cover the rest of the collection, where a task is a new feature, a method, or a
 migration, and what counts as a solution has to be stated per task from the issue's own
-requirements. Until both are done, the 281 figure is an upper bound on how many tasks
+requirements. Until both are done, the 275 figure is an upper bound on how many tasks
 are automatically scorable.
 
 A file is currently counted as a test by its path (`test_*`, `tests/`, `spec/`,
-`conftest.py`) without inspecting it, so some of those 281 may carry a test that does not
+`conftest.py`) without inspecting it, so some of those 275 may carry a test that does not
 exercise the change.
 
 ## What the collection is for

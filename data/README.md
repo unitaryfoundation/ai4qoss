@@ -62,7 +62,7 @@ Files are in [figures/](figures/), grouped by the figure they support.
 | File | Contents |
 |---|---|
 | `task_pipeline_by_year.csv` | Counts at each stage from bounty to usable task, per year, and what the reference solutions change |
-| `task_solution_size.csv` | Distribution of lines changed across the 431 reference solutions |
+| `task_solution_size.csv` | Distribution of lines changed across the 417 reference solutions |
 | `bounties_by_year.csv` | Bounties offered per year, aggregated |
 | `ai_attitudes.csv` | Topic counts from the free-text AI questions of the 2026 unitaryHACK surveys, 9 maintainers and 16 contributors |
 
