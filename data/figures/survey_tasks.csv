@@ -1,7 +1,7 @@
 task,manually,with_ai,not_applicable,row_total,does_task,ai_pct_of_doers,manual_pct_of_doers,na_pct_of_row
-"Discovering & summarizing research papers (e.g., arXiv)",107,220,27,289,262,84.0,40.8,9.3
-Learning new quantum concepts or SDKs,104,233,17,288,271,86.0,38.4,5.9
-Writing quantum circuits or algorithm code,103,229,27,289,262,87.4,39.3,9.3
-Debugging or optimizing quantum code,93,227,28,281,253,89.7,36.8,10.0
-Generating code documentation,86,210,43,282,239,87.9,36.0,15.2
-Hardware calibration or signal/pulse tuning,29,60,183,258,75,80.0,38.7,70.9
+"Discovering & summarizing research papers (e.g., arXiv)",203,368,34,492,459,80.2,44.2,6.9
+Learning new quantum concepts or SDKs,198,380,23,487,464,81.9,42.7,4.7
+Writing quantum circuits or algorithm code,182,374,45,490,446,83.9,40.8,9.2
+Debugging or optimizing quantum code,162,380,46,480,436,87.2,37.2,9.6
+Generating code documentation,142,378,59,481,427,88.5,33.3,12.3
+Hardware calibration or signal/pulse tuning,72,118,285,449,170,69.4,42.4,63.5

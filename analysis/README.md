@@ -4,7 +4,7 @@ The code behind every number in the perspective paper and every file in
 [`../data/figures/`](../data/figures/). Scripts only, no data. Each script's docstring
 states its method, its denominators, and how it can be wrong.
 
-Last verified: 2026-10-11
+Last verified: 2026-10-20
 
 License: Apache-2.0 ([LICENSE](LICENSE)). Each script carries an SPDX header with
 the copyright, so it stays identifiable after being copied out.

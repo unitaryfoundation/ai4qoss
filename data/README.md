@@ -4,7 +4,7 @@ Datasets behind the figures in the perspective paper. Scope is deliberate: what 
 three figures rest on, and nothing else. Survey responses, raw pull request caches, and
 the organizers' bounty list stay outside this repository.
 
-Last verified: 2026-10-12
+Last verified: 2026-10-20
 
 License: CC BY 4.0 (see [../LICENSING.md](../LICENSING.md)). These files are often
 downloaded one at a time, so the terms travel only through this page.
@@ -25,7 +25,7 @@ the only record of it. "Measured" is when the script last ran against its source
 | `task_pipeline_by_year.csv`, `task_solution_size.csv` | 2026-10-06 | the 2022 to 2026 unitaryHACK events, re-resolved on that date for the bounties still open in August, which moved one more bounty into the usable set |
 | `bounties_by_year.csv` | 2026-08-23 | the 2022 to 2026 events, all concluded |
 | `ai_attitudes.csv` | 2026-08-23 | the 2026 post-event surveys, closed |
-| the three `survey_*.csv` | 2026-10-08 | a 2026-10-07 snapshot of a survey still collecting responses |
+| the three `survey_*.csv` | 2026-10-20 | a 2026-10-20 snapshot of a survey still collecting responses |
 
 Three files were not part of the October re-measurement. For `bounties_by_year.csv` and
 `ai_attitudes.csv` that changes nothing, because both describe events that had already
@@ -76,7 +76,7 @@ Files are in [figures/](figures/), grouped by the figure they support.
 
 These are the three questions behind the figure panels and nothing else from that
 survey. They come from the 2026 Quantum Open Source Software Survey run by the Unitary
-Foundation, as a snapshot taken on 2026-10-07 while collection was still open. The
+Foundation, as a snapshot taken on 2026-10-20 while collection was still open. The
 survey was announced to run through 29 October 2026 and the Foundation publishes its own
 summary of the full results, so these counts are a mid-collection cut rather than the
 final ones.
@@ -85,10 +85,17 @@ Denominators differ by question, because respondents drop out as the survey proc
 each file carries its own answered count. `survey_tasks.csv` and
 `survey_verification.csv` come from questions that allowed several answers, so their
 shares overlap and do not sum to 100; in the first of them a respondent can report both
-modes for one task. The method worded "Automation verification" is reproduced as the
-survey worded it and is not distinguished from automated tests by the instrument. In
-`survey_agreement.csv` the `rated` column is the row total minus the respondents who
-answered "not applicable", and it is the denominator the paper uses.
+modes for one task. The verification question offered both "Automated tests" and
+"Automation verification" without defining either, and 102 of the 133 respondents who
+chose the second also chose the first, so the two are published as one row,
+`Automated test/verification`. In `survey_agreement.csv` the `rated` column is the row
+total minus the respondents who answered "not applicable", and it is the denominator
+the paper uses.
+
+The export this snapshot comes from carries one row per respondent, where the
+2026-10-07 one was already aggregated. SurveyMonkey flags 90 of the 1,315 responses as
+poor quality, mostly for speeding. Dropping them moves no share in these three files by
+more than a point, so the published counts are over all respondents.
 
 Survey respondents are the quantum software community at large. They are not the
 contributors to the 19 repositories measured in the disclosure files above, so adoption

@@ -389,15 +389,15 @@ def task_components():
 
     # ------------------------- d  how AI-generated code is verified (Q56), n = 294
     v = read("survey_verification.csv")
-    order = ["Manual reviews", "Automated tests", "Automation verification",
+    order = ["Manual reviews", "Automated test/verification",
              "Formal verification", "Never do"]
     vals = [float(next(r for r in v if r["method"] == o)["percent_of_answered"])
             for o in order]
-    labels = ["manual review", "automated tests", "automation verification",
+    labels = ["manual review", "automated test/verification",
               "formal verification", "no verification"]
     # The last row is the share reporting no verification at all, which is the
     # one category that is not a method; the accent color marks that difference.
-    cols = [C["quantum"]] * 4 + [C["accent"]]
+    cols = [C["quantum"]] * 3 + [C["accent"]]
     fig, ax = new_component(FIG_TASKS, "surveyverify")
     ys = np.arange(len(order))[::-1]
     for y, v, col in zip(ys, vals, cols):
