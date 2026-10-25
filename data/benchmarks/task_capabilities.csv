@@ -1,0 +1,12 @@
+capability,n_tasks,pct,denominator
+fault_localization,41,9.8,417
+api_understanding,273,65.5,417
+cross_file_integration,111,26.6,417
+compatibility_migration,37,8.9,417
+scientific_numerical_reasoning,144,34.5,417
+algorithm_implementation,129,30.9,417
+performance_optimization,22,5.3,417
+test_design,161,38.6,417
+documentation_writing,82,19.7,417
+build_tooling,45,10.8,417
+ui_frontend,40,9.6,417

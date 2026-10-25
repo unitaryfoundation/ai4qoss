@@ -1,0 +1,145 @@
+category,name,n_tasks_direct,pct_direct,n_host_repositories_direct,n_tasks_background_only,denominator
+framework_or_library,Qiskit,53,12.7,26,20,417
+framework_or_library,OpenQASM 3,33,7.9,13,3,417
+framework_or_library,PennyLane,23,5.5,8,9,417
+framework_or_library,NumPy,22,5.3,14,0,417
+framework_or_library,toqito,21,5.0,1,0,417
+framework_or_library,Cirq,20,4.8,6,9,417
+framework_or_library,qBraid,19,4.6,3,1,417
+framework_or_library,Sphinx,16,3.8,11,1,417
+framework_or_library,Amazon Braket SDK,15,3.6,6,10,417
+framework_or_library,JAX,15,3.6,7,3,417
+framework_or_library,Matplotlib,13,3.1,12,1,417
+framework_or_library,NetworkX,12,2.9,9,8,417
+framework_or_library,CUDA-Q,12,2.9,1,2,417
+framework_or_library,Mitiq,11,2.6,1,5,417
+framework_or_library,PyTorch,11,2.6,6,3,417
+framework_or_library,rustworkx,11,2.6,4,2,417
+framework_or_library,PyQIR,11,2.6,3,1,417
+framework_or_library,OpenQASM 2,10,2.4,10,6,417
+framework_or_library,QuTiP,10,2.4,5,6,417
+framework_or_library,QIR,10,2.4,4,2,417
+framework_or_library,CVXPY,9,2.2,1,1,417
+framework_or_library,Piquasso,9,2.2,1,1,417
+framework_or_library,KQCircuits,9,2.2,1,0,417
+framework_or_library,SymPy,8,1.9,6,3,417
+framework_or_library,BQSKit,8,1.9,2,0,417
+framework_or_library,Graphix,8,1.9,1,0,417
+framework_or_library,metriq-gym,8,1.9,1,0,417
+framework_or_library,qlass,8,1.9,1,0,417
+framework_or_library,KLayout,7,1.7,1,3,417
+framework_or_library,SciPy,7,1.7,5,2,417
+framework_or_library,MLIR,7,1.7,3,1,417
+framework_or_library,Perceval,7,1.7,2,1,417
+framework_or_library,dynamiqs,7,1.7,2,1,417
+framework_or_library,PauLie,7,1.7,1,0,417
+framework_or_library,qBraid-QIR,7,1.7,1,0,417
+framework_or_library,Qibo,6,1.4,2,1,417
+framework_or_library,Covalent,6,1.4,3,0,417
+framework_or_library,PauliStrings.jl,6,1.4,1,0,417
+framework_or_library,Pulser,6,1.4,1,0,417
+framework_or_library,PyQASM,6,1.4,3,0,417
+framework_or_library,Q#/QDK,6,1.4,1,0,417
+framework_or_library,Qiskit Aer,6,1.4,4,0,417
+framework_or_library,React,6,1.4,3,0,417
+framework_or_library,TorchQuantum,6,1.4,1,0,417
+framework_or_library,Stim,5,1.2,5,4,417
+framework_or_library,quimb,5,1.2,2,3,417
+framework_or_library,pyQuil,5,1.2,2,2,417
+framework_or_library,Qiskit IBM Runtime,5,1.2,4,1,417
+framework_or_library,guppylang,5,1.2,1,1,417
+framework_or_library,AutoQASM,5,1.2,1,0,417
+framework_or_library,Bartiq,5,1.2,1,0,417
+framework_or_library,Braket.jl,5,1.2,2,0,417
+framework_or_library,H-hat,5,1.2,1,0,417
+framework_or_library,MQT Core,5,1.2,1,0,417
+framework_or_library,PyQTorch,5,1.2,2,0,417
+framework_or_library,QuantumToolbox.jl,5,1.2,3,0,417
+framework_or_library,PyZX,4,1.0,2,3,417
+framework_or_library,pytket,4,1.0,3,3,417
+framework_or_library,LLVM,4,1.0,3,1,417
+framework_or_library,qiskit-braket-provider,4,1.0,1,1,417
+framework_or_library,Deltakit,4,1.0,1,0,417
+framework_or_library,HierarQcal,4,1.0,1,0,417
+framework_or_library,Marqov SDK,4,1.0,1,0,417
+framework_or_library,PauliPropagation.jl,4,1.0,1,0,417
+framework_or_library,QuiZX,4,1.0,1,0,417
+framework_or_library,TensorCircuit,4,1.0,1,0,417
+framework_or_library,ZXLive,4,1.0,1,0,417
+framework_or_library,oqpy,4,1.0,1,0,417
+framework_or_library,OpenFermion,3,0.7,1,2,417
+framework_or_library,UCC,3,0.7,2,2,417
+framework_or_library,Clifft,3,0.7,2,1,417
+framework_or_library,PICOS,3,0.7,1,1,417
+framework_or_library,Piccolo.jl,3,0.7,2,1,417
+framework_or_library,tqec,3,0.7,1,1,417
+framework_or_library,Bloqade,3,0.7,2,0,417
+framework_or_library,CuPy,3,0.7,2,0,417
+framework_or_library,Legato.jl,3,0.7,1,0,417
+framework_or_library,Makie,3,0.7,3,0,417
+framework_or_library,OpenQAOA,3,0.7,1,0,417
+framework_or_library,QDK/Chemistry,3,0.7,1,0,417
+framework_or_library,Qadence,3,0.7,1,0,417
+framework_or_library,Qibolab,3,0.7,1,0,417
+framework_or_library,TensorFlow,3,0.7,2,0,417
+framework_or_library,inconspiquous,3,0.7,1,0,417
+framework_or_library,metriq-app,3,0.7,2,0,417
+framework_or_library,metriq-client,3,0.7,1,0,417
+framework_or_library,oqd-core,3,0.7,1,0,417
+framework_or_library,qlasskit,3,0.7,1,0,417
+framework_or_library,scqubits,3,0.7,1,0,417
+framework_or_library,xDSL,3,0.7,1,0,417
+framework_or_library,PySCF,2,0.5,2,2,417
+framework_or_library,QuantumOptics.jl,2,0.5,1,1,417
+framework_or_library,amazon-braket-pennylane-plugin,2,0.5,2,1,417
+framework_or_library,OpenQASM (version unspecified),1,0.2,1,2,417
+framework_or_library,QuantumOpticsBase.jl,1,0.2,1,2,417
+framework_or_library,QETLAB,0,0.0,0,6,417
+framework_or_library,QREF,0,0.0,0,3,417
+framework_or_library,"other (211 names, under 3 tasks each)",145,34.8,82,21,417
+framework_or_library,"(any named, direct)",414,99.3,,,417
+framework_or_library,(none involved),3,0.7,,,417
+framework_or_library,(material insufficient),0,0.0,,,417
+simulator,Qiskit Aer,9,2.2,5,2,417
+simulator,Piquasso simulators,9,2.2,1,0,417
+simulator,Cirq simulators,7,1.7,3,1,417
+simulator,PennyLane default devices,6,1.4,2,3,417
+simulator,Braket LocalSimulator,5,1.2,5,5,417
+simulator,PyQTorch,5,1.2,2,1,417
+simulator,Graphix simulators,4,1.0,1,0,417
+simulator,dynamiqs solvers,4,1.0,2,0,417
+simulator,CUDA-Q targets,3,0.7,1,1,417
+simulator,PauliPropagation.jl,3,0.7,1,1,417
+simulator,QuiZX,3,0.7,1,1,417
+simulator,TorchQuantum simulator,3,0.7,1,1,417
+simulator,quimb,3,0.7,1,1,417
+simulator,MQT DD simulator,3,0.7,1,0,417
+simulator,Qibolab emulator,3,0.7,1,0,417
+simulator,QuantumToolbox.jl,3,0.7,2,0,417
+simulator,TensorCircuit,3,0.7,1,0,417
+simulator,Perceval simulators,2,0.5,1,1,417
+simulator,Pulser emulators,2,0.5,1,1,417
+simulator,Qibo backends,2,0.5,2,1,417
+simulator,Qiskit quantum_info / reference primitives,2,0.5,2,1,417
+simulator,Stim,2,0.5,2,1,417
+simulator,IonQ cloud simulator,0,0.0,0,3,417
+simulator,"other (26 names, under 3 tasks each)",24,5.8,19,10,417
+simulator,"(any named, direct)",96,23.0,,,417
+simulator,(none involved),297,71.2,,,417
+simulator,(material insufficient),24,5.8,,,417
+hardware_or_provider,Amazon Braket (managed devices),7,1.7,4,8,417
+hardware_or_provider,IonQ,7,1.7,5,6,417
+hardware_or_provider,IBM Quantum,6,1.4,4,12,417
+hardware_or_provider,Rigetti,3,0.7,3,2,417
+hardware_or_provider,Azure Quantum,1,0.2,1,3,417
+hardware_or_provider,QuEra,1,0.2,1,3,417
+hardware_or_provider,Quantinuum,0,0.0,0,5,417
+hardware_or_provider,"other (4 names, under 3 tasks each)",1,0.2,1,4,417
+hardware_or_provider,"(any named, direct)",24,5.8,,,417
+hardware_or_provider,(none involved),391,93.8,,,417
+hardware_or_provider,(material insufficient),2,0.5,,,417
+platform_modeled_not_executed,photonic,14,3.4,,,417
+platform_modeled_not_executed,superconducting,11,2.6,,,417
+platform_modeled_not_executed,neutral atom,4,1.0,,,417
+platform_modeled_not_executed,trapped ion,2,0.5,,,417
+platform_modeled_not_executed,cavity QED,1,0.2,,,417

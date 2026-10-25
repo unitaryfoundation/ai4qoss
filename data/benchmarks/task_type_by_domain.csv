@@ -1,0 +1,10 @@
+task_type,circuit_ir_operators,compilation_optimization,simulation_numerics,algorithms_applications,error_mitigation,qec_fault_tolerance,hardware_control_execution,characterization_benchmarking,quantum_information_theory,visualization_ui,education_content,classical_support,infrastructure_general,unclear,n_tasks
+bug_fix,12,5,4,0,2,2,3,0,6,8,0,5,5,0,38
+feature,102,25,45,22,3,4,33,10,19,39,4,10,18,0,225
+compat_integration,13,0,6,2,0,1,8,1,0,1,0,1,5,0,25
+performance,3,1,9,1,0,2,0,1,0,0,0,1,1,0,14
+refactor,5,1,1,0,1,1,2,1,2,2,0,0,3,0,15
+testing,3,3,6,1,0,0,4,3,1,0,0,0,7,0,18
+build_ci,0,0,0,0,0,0,0,0,0,0,0,0,8,0,8
+docs_examples_ui,3,6,15,18,4,2,8,5,2,3,33,3,27,0,74
+other_unclear,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

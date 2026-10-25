@@ -1,0 +1,14 @@
+proposed_verification,n_tasks,pct,denominator
+reproducer_regression,52,12.5,417
+interface_contract,183,43.9,417
+semantic_comparison,73,17.5,417
+reference_value,119,28.5,417
+invariant_property,116,27.8,417
+statistical,26,6.2,417
+correctness_plus_performance,25,6.0,417
+clean_build,62,14.9,417
+executable_examples,67,16.1,417
+browser_ui_workflow,22,5.3,417
+maintainer_review,114,27.3,417
+"(any of semantic_comparison, reference_value, invariant_property, statistical)",233,55.9,417
+"(only clean_build, executable_examples, browser_ui_workflow, maintainer_review)",94,22.5,417

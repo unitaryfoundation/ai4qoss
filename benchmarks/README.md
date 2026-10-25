@@ -1,17 +1,21 @@
 # Benchmarks
 
-Benchmark tasks built from real quantum open-source work: resolved issues where the
-merged pull request is the reference solution. Existing quantum coding benchmarks test
-snippet-level generation or question answering (see [reading/](../reading/)); these tasks
-are drawn from changes that maintainers accepted into their projects.
+Candidate maintenance tasks drawn from quantum open-source community events, with
+issues linked to selected merged pull requests. The collection describes repository
+work that complements quantum programming and scientific problem-solving evaluations
+(see [reading/](../reading/)). Merged status alone does not establish a complete or
+scientifically correct solution.
 
-Last verified: 2026-10-19
+Last verified: 2026-10-25
 
 ## Status
 
 A pilot collection of 417 candidate tasks has been assembled from five unitaryHACK
 events (2022 to 2026). Stage counts per year are in
 [../data/figures/task_pipeline_by_year.csv](../data/figures/task_pipeline_by_year.csv).
+How the tasks divide by type, software domain and technology, how large the reference
+changes are, how each could be verified, and where the records are weak is in
+[../data/benchmarks/](../data/benchmarks/).
 
 We publish only the collection method and aggregate statistics. The per-task list,
 issue text, reference patches, and tests are not released. Any future release will
@@ -53,12 +57,19 @@ carries a regression test, fail-then-pass against that test is the criterion: it
 be shown to fail at the parent commit and pass after the change. That rule does not
 cover the rest of the collection, where a task is a new feature, a method, or a
 migration, and what counts as a solution has to be stated per task from the issue's own
-requirements. Until both are done, the 275 figure is an upper bound on how many tasks
-are automatically scorable.
+requirements. Until both are done, how many tasks can be scored automatically is not
+known, and the 275 solutions that change a test file do not bound it in either
+direction: a changed test may not exercise the change or may not run in a rebuilt
+environment, and a task without one can still be scored against criteria stated from
+its issue.
 
 A file is currently counted as a test by its path (`test_*`, `tests/`, `spec/`,
 `conftest.py`) without inspecting it, so some of those 275 may carry a test that does not
 exercise the change.
+
+The composition analysis includes a completed 40-task Codex AI source review and
+targeted corrections. It remains an LLM-assisted analysis without human accuracy or
+task-execution validation; see [data/benchmarks](../data/benchmarks/).
 
 ## What the collection is for
 

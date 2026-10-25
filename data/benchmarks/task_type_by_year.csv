@@ -1,0 +1,11 @@
+task_type,2022,2023,2024,2025,2026
+bug_fix,2,5,11,14,6
+feature,9,29,48,65,74
+compat_integration,1,3,4,5,12
+performance,1,1,2,4,6
+refactor,1,3,4,2,5
+testing,1,1,3,9,4
+build_ci,2,3,1,1,1
+docs_examples_ui,11,15,25,10,13
+other_unclear,0,0,0,0,0
+n_tasks,28,60,98,110,121

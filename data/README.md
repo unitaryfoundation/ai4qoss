@@ -4,7 +4,13 @@ Datasets behind the figures in the perspective paper. Scope is deliberate: what 
 three figures rest on, and nothing else. Survey responses, raw pull request caches, and
 the organizers' bounty list stay outside this repository.
 
-Last verified: 2026-10-20
+[benchmarks/](benchmarks/) holds a separate set of aggregates describing the
+composition of the 417 candidate maintenance tasks: task types, software domains,
+technologies, change scope, proposed verification methods and record quality, with a
+comparison against published benchmarks. Its README carries its own dates and
+denominators.
+
+Last verified: 2026-10-25
 
 License: CC BY 4.0 (see [../LICENSING.md](../LICENSING.md)). These files are often
 downloaded one at a time, so the terms travel only through this page.
@@ -65,6 +71,10 @@ Files are in [figures/](figures/), grouped by the figure they support.
 | `task_solution_size.csv` | Distribution of lines changed across the 417 reference solutions |
 | `bounties_by_year.csv` | Bounties offered per year, aggregated |
 | `ai_attitudes.csv` | Topic counts from the free-text AI questions of the 2026 unitaryHACK surveys, 9 maintainers and 16 contributors |
+
+How the 417 tasks divide by type, domain and technology, and how each could be
+verified, is in [benchmarks/](benchmarks/). Both places count a test file within the
+first 100 files of each reference pull request, which gives 275.
 
 ### Community survey
 
@@ -167,9 +177,9 @@ contributing; whether they did is not recorded anywhere. It can be reconstructed
 each project's commit history without a survey, by checking whether a participant
 appears again in the following year.
 
-Fail-then-pass validation of the benchmark tasks. Until each reference test is shown to
-fail at the parent commit and pass after the change, the automatically scorable count is
-an upper bound. See [../benchmarks/](../benchmarks/).
+Fail-then-pass validation of the benchmark tasks. No reference test has yet been shown
+to fail at the parent commit and pass after the change, so how many tasks can be scored
+automatically is not known. See [../benchmarks/](../benchmarks/).
 
 Direct evidence on model staleness. The interface-survival numbers say what fraction of
 an old API still imports, which bounds how wrong a model trained on that snapshot can

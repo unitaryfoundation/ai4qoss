@@ -1,0 +1,9 @@
+statistic,value,denominator
+repositories,110,
+tasks,417,
+"largest repository, tasks",21,417
+"largest repository, pct of tasks",5.0,417
+"top five repositories, pct of tasks",17.7,417
+"top ten repositories, pct of tasks",28.1,417
+repositories with one task,26,110
+median tasks per repository,3.0,110

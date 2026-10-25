@@ -1,0 +1,19 @@
+language,n_tasks,pct,denominator
+Python,319,76.5,417
+Jupyter notebook,37,8.9,417
+Julia,30,7.2,417
+Rust,25,6.0,417
+C++,17,4.1,417
+HTML,11,2.6,417
+JavaScript,11,2.6,417
+CSS,10,2.4,417
+CMake,9,2.2,417
+Shell,9,2.2,417
+C/C++ header,5,1.2,417
+TypeScript,5,1.2,417
+KLayout macro,4,1.0,417
+MLIR,4,1.0,417
+OpenQASM,4,1.0,417
+Java,2,0.5,417
+Q#,2,0.5,417
+(no code file changed),13,3.1,417

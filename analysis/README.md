@@ -1,10 +1,11 @@
 # analysis
 
 The code behind every number in the perspective paper and every file in
-[`../data/figures/`](../data/figures/). Scripts only, no data. Each script's docstring
-states its method, its denominators, and how it can be wrong.
+[`../data/figures/`](../data/figures/) and [`../data/benchmarks/`](../data/benchmarks/).
+Scripts only, no data. Each script's docstring states its method, its denominators,
+and how it can be wrong.
 
-Last verified: 2026-10-20
+Last verified: 2026-10-25
 
 License: Apache-2.0 ([LICENSE](LICENSE)). Each script carries an SPDX header with
 the copyright, so it stays identifiable after being copied out.
@@ -54,6 +55,8 @@ was, how free text was classified.
 | `benchmark_pilot/solution_diffs.py` | Whether each reference solution carries a test | task list |
 | `benchmark_pilot/reresolve_open.py` | Refetches only the bounties still open | task list |
 | `benchmark_pilot/aggregates.py` | The per-year counts that are published | `task_pipeline_by_year.csv`, `task_solution_size.csv` |
+| `benchmark_pilot/task_scope.py` | Files, lines, test files and languages of each reference solution, from complete file lists | task scope table |
+| `benchmark_pilot/characterize.py` | Composition of the candidate tasks from their annotations; method in `benchmark_pilot/CHARACTERIZATION.md` | the CSVs in `../data/benchmarks/` |
 
 ## Running them
 

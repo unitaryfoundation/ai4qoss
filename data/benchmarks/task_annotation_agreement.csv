@@ -1,0 +1,16 @@
+review_subset,field,measure,value,n_tasks,pct
+targeted,primary_type,exact agreement,66,72,91.7
+targeted,knowledge,exact agreement,66,72,91.7
+targeted,reference_match,exact agreement,68,72,94.4
+targeted,domains,mean Jaccard overlap,0.88,72,
+targeted,domains,Jaccard >= 0.5,65,72,90.3
+random,primary_type,exact agreement,49,50,98.0
+random,knowledge,exact agreement,46,50,92.0
+random,reference_match,exact agreement,49,50,98.0
+random,domains,mean Jaccard overlap,0.92,50,
+random,domains,Jaccard >= 0.5,49,50,98.0
+all,primary_type,exact agreement,115,122,94.3
+all,knowledge,exact agreement,112,122,91.8
+all,reference_match,exact agreement,117,122,95.9
+all,domains,mean Jaccard overlap,0.89,122,
+all,domains,Jaccard >= 0.5,114,122,93.4

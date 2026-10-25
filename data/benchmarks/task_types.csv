@@ -1,0 +1,10 @@
+task_type,primary_n,primary_pct,primary_or_secondary_n,primary_or_secondary_pct,denominator
+bug_fix,38,9.1,53,12.7,417
+feature,225,54.0,262,62.8,417
+compat_integration,25,6.0,50,12.0,417
+performance,14,3.4,24,5.8,417
+refactor,15,3.6,36,8.6,417
+testing,18,4.3,25,6.0,417
+build_ci,8,1.9,31,7.4,417
+docs_examples_ui,74,17.7,92,22.1,417
+other_unclear,0,0.0,0,0.0,417

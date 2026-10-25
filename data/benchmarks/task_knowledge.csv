@@ -1,0 +1,5 @@
+knowledge_level,n_tasks,pct,denominator
+general_engineering,130,31.2,417
+quantum_api_workflow,149,35.7,417
+quantum_semantics,138,33.1,417
+unclear,0,0.0,417

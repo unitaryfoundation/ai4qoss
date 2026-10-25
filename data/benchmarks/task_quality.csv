@@ -1,0 +1,32 @@
+flag,value,n_tasks,pct,denominator
+material,limited,28,6.7,417
+material,sufficient,389,93.3,417
+confidence,high,186,44.6,417
+confidence,low,68,16.3,417
+confidence,medium,163,39.1,417
+reference_match,full,337,80.8,417
+reference_match,mismatch,3,0.7,417
+reference_match,partial,73,17.5,417
+reference_match,unclear,4,1.0,417
+reference_pr_status,ok,414,99.3,417
+reference_pr_status,pr_404_now,2,0.5,417
+reference_pr_status,pr_empty,1,0.2,417
+reference_pr_shared_with_another_task,yes,6,1.4,417
+issue_linked_to_more_than_one_merged_pr,yes,15,3.6,417
+reference_pr_repository,host repository,410,98.3,417
+reference_pr_repository,other owner (fork or template),4,1.0,417
+reference_pr_repository,"other repository, same owner",3,0.7,417
+reference_pr_base_branch,default branch,356,85.4,417
+reference_pr_base_branch,"default branch, renamed since",27,6.5,417
+reference_pr_base_branch,development or release branch,10,2.4,417
+reference_pr_base_branch,feature or event branch,22,5.3,417
+reference_pr_base_branch,unknown (pull request unavailable),2,0.5,417
+initial_review_status,adjudicated_changed,21,5.0,417
+initial_review_status,adjudicated_kept,6,1.4,417
+initial_review_status,agreed,95,22.8,417
+initial_review_status,coordinator_rule_change,3,0.7,417
+initial_review_status,not_reviewed,292,70.0,417
+codex_source_audit,not_source_audited,376,90.2,417
+codex_source_audit,sample_40,40,9.6,417
+codex_source_audit,targeted_followup,1,0.2,417
+post_audit_correction,applied,23,5.5,417

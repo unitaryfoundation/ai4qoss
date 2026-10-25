@@ -3,7 +3,7 @@
 `CONTRIBUTING.md` asks every contribution to state whether and how AI tools were used.
 This page does that for the repository itself.
 
-Last verified: 2026-10-12
+Last verified: 2026-10-25
 
 ## What AI assisted
 
@@ -15,6 +15,10 @@ landed, and the `Last verified:` line on each page records when that check last 
 
 The CSVs in `data/figures/` are script output. No model produced or edited a number in
 them. The scripts behind them are in `analysis/`, one directory per dataset.
+
+The CSVs in `data/benchmarks/` are also script output, but they aggregate task labels
+assigned with LLM assistance and not verified by a person, and the cells of
+`benchmark_comparison.csv` were checked against their sources by an AI agent.
 
 ## What the verification covers
 
