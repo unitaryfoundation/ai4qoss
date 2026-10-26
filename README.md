@@ -6,8 +6,7 @@ tools, and benchmarks.
 This repository accompanies a perspective paper in preparation by the quantum open-source
 software (QOSS) community; a link will be added when the preprint is posted. The paper is
 a fixed snapshot. This repository holds the parts that change: policies, tool catalogs,
-harness recipes, and data. The paper will cite a tagged release, so the citation stays
-stable while the content moves on.
+harness recipes, and data.
 
 ## Layout
 
@@ -29,8 +28,7 @@ stable while the content moves on.
   this repository too, and
   [AI_use_this_repository.md](AI_use_this_repository.md) states how AI tools were used
   to produce it.
-- Releases are tagged and dated. Cite a specific release; the default branch carries the
-  latest content.
+- Releases are tagged and dated; the default branch carries the latest content.
 
 ## Contributing
 
