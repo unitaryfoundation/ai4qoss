@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 """2026 Quantum Open Source Software Survey: the questions this paper uses.
 
-Source: the SurveyMonkey per-respondent export of 2026-10-20, which we hold and do not
+Source: the SurveyMonkey per-respondent export of 2026-10-26, which we hold and do not
 publish. The survey was still open at that point (announced to run through
 29 October 2026), so every count here is a mid-collection snapshot.
 
@@ -17,7 +17,7 @@ Every output row states the denominator it was computed against.
 
 Q56 asked how respondents verify AI-generated code and offered both "Automated tests"
 and "Automation verification" without defining either. The two are reported here as one
-category: 102 of the 133 who chose automation verification also chose automated tests,
+category: 127 of the 162 who chose automation verification also chose automated tests,
 so the split reflects the wording of the instrument rather than a difference in what
 respondents do.
 
@@ -32,7 +32,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
 from paths import out, private  # noqa: E402
 
-SRC = private("26SurveyData_All_261020/CSV/2026 Quantum Open Source Software Survey.csv",
+SRC = private("26SurveyData_All_261026/CSV/2026 Quantum Open Source Software Survey.csv",
               "the per-respondent survey export")
 OUT = out("qoss_survey")
 
@@ -114,8 +114,28 @@ with open(OUT / "survey_agreement.csv", "w", newline="") as f:
 clean = [r for r in rows if r[RQ_FLAG].strip() != "1.0"]
 ans_clean = [r for r in clean if any(ticked(r, i) for _, cols in VERIFY for i in cols)]
 print(f"{len(rows)} respondents, {len(answered)} answered the verification question")
+
+
+def shares(rs):
+    """Every share the three files publish, recomputed on a subset of respondents."""
+    out = []
+    for _, i in TASKS:
+        d = sum(1 for r in rs if ticked(r, i) or ticked(r, i + 1))
+        out += [100 * sum(ticked(r, i + k) for r in rs) / d for k in (0, 1)]
+    ans = [r for r in rs if any(ticked(r, i) for _, cols in VERIFY for i in cols)]
+    out += [100 * sum(1 for r in ans if any(ticked(r, i) for i in cols)) / len(ans)
+            for _, cols in VERIFY]
+    for i in AGREE:
+        c = {s: sum(1 for r in rs if r[i].strip() == s) for s in SCALE}
+        rated = sum(c.values()) - c["N/A"]
+        out.append(100 * (c["Strongly agree"] + c["Agree"]) / rated)
+    return out
+
+
+shift = max(abs(a - b) for a, b in zip(shares(rows), shares(clean)))
 print(f"dropping the {len(rows) - len(clean)} responses SurveyMonkey flags as poor "
-      f"quality leaves {len(ans_clean)} and moves no share by more than a point")
+      f"quality leaves {len(ans_clean)} and moves no share by more than "
+      f"{shift:.1f} points")
 both = sum(1 for r in answered if ticked(r, 526) and ticked(r, 527))
 only_v = sum(1 for r in answered if not ticked(r, 526) and ticked(r, 527))
 print(f"automated tests and automation verification: {both} chose both, {only_v} chose "

@@ -1,5 +1,5 @@
 method,responses,answered,percent_of_answered
-Never do,25,494,5.1
-Manual reviews,396,494,80.2
-Automated test/verification,298,494,60.3
-Formal verification,86,494,17.4
+Never do,34,621,5.5
+Manual reviews,490,621,78.9
+Automated test/verification,372,621,59.9
+Formal verification,106,621,17.1
