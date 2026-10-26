@@ -29,6 +29,20 @@ C = {
     "grid": "#e8eaec",
 }
 
+# Per-package series style, shared by every panel that draws one line per project
+# (Fig. 1b, 1c, 2a) so a package looks the same wherever it appears. The three
+# quantum packages stay in the blue family but are separated by lightness, dash
+# pattern and marker, so they remain distinct in grayscale; mainstream projects
+# are gray and dotted.
+PKG = {
+    "Qiskit":    {"color": "#1d3461", "ls": "-",               "marker": "o"},
+    "PennyLane": {"color": "#3f7fc8", "ls": (0, (4.0, 1.6)),   "marker": "s"},
+    "Cirq":      {"color": "#86b6e3", "ls": (0, (5.0, 1.4, 1.2, 1.4)), "marker": "^"},
+    "numpy":     {"color": "#6f757e", "ls": (0, (1.0, 1.3)),   "marker": "o"},
+    "scipy":     {"color": "#adb2b9", "ls": (0, (1.0, 1.3)),   "marker": "o"},
+}
+
+
 def blend(hex_color, alpha, bg="#ffffff"):
     """Flatten a translucent color against the background.
 
@@ -84,6 +98,11 @@ def apply_style():
 # segments and the deck places the words against them.
 SURVIVAL_KEY_X = (0.0, 0.215, 0.485, 0.635, 0.825)
 SURVIVAL_KEY_Y = 0.065
+# Fig. 2a: the deck writes each project's label at these rows (fractions from the
+# bottom of the plot area); the component draws a line sample to the left of each.
+QUBIT_KEY_Y = (0.365, 0.312, 0.259)
+QUBIT_KEY_X = 0.565          # line samples start right of the 20-qubit rule
+QUBIT_LABEL_X = 0.645        # project labels start right of the samples
 
 FIG_CORPUS = {
     "size": (WIDTH, 3.36),   # the exported PDF is cropped to content by export_pdf.sh

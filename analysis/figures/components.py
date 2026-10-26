@@ -135,24 +135,22 @@ def corpus_components():
             if float(r["unparsed_pct"]) <= 5]
     fig, ax = new_component(FIG_CORPUS, "survival")
     years = ["2019", "2020", "2021", "2022", "2023", "2024", "2025"]
-    style = {"Qiskit": (C["quantum"], "-"), "PennyLane": (C["quantum_mid"], "-"),
-             "Cirq": (C["quantum_soft"], "-"), "numpy": (C["main"], "--"),
-             "scipy": (C["main_soft"], "--")}
-    for proj, (col, ls) in style.items():
+    order = ["Qiskit", "PennyLane", "Cirq", "numpy", "scipy"]
+    PKG = figstyle.PKG
+    for proj in order:
+        st = PKG[proj]
         d = {r["year"]: float(r["toplevel_survival_strict_pct"])
              for r in surv if r["project"] == proj}
         xs = [i for i, y in enumerate(years) if y in d]
-        ax.plot(xs, [d[years[i]] for i in xs], ls, color=col, marker="o", ms=1.9,
-                lw=1.0)
+        ax.plot(xs, [d[years[i]] for i in xs], color=st["color"], ls=st["ls"],
+                marker=st["marker"], ms=2.4, lw=1.1)
     # The only clear space in this panel is the band below the lowest data point
     # (16.2%), so the key is a single row along the bottom. Positions are axes
     # fractions shared with the deck via figstyle.SURVIVAL_KEY_X.
-    for x0, (col, ls) in zip(figstyle.SURVIVAL_KEY_X,
-                             [(C["quantum"], "-"), (C["quantum_mid"], "-"),
-                              (C["quantum_soft"], "-"), (C["main"], "--"),
-                              (C["main_soft"], "--")]):
-        ax.plot([x0, x0 + 0.045], [figstyle.SURVIVAL_KEY_Y] * 2, ls, color=col,
-                lw=1.0, marker="o", ms=1.8, markevery=[0],
+    for x0, proj in zip(figstyle.SURVIVAL_KEY_X, order):
+        st = PKG[proj]
+        ax.plot([x0, x0 + 0.045], [figstyle.SURVIVAL_KEY_Y] * 2, color=st["color"],
+                ls=st["ls"], lw=1.1, marker=st["marker"], ms=2.2, markevery=[0],
                 transform=ax.transAxes, clip_on=False)
     ax.set_xticks(range(len(years)))
     ax.set_xticklabels([f"'{y[2:]}" for y in years])
@@ -169,7 +167,7 @@ def corpus_components():
     # Only projects whose release notes carry a deprecation section can be counted.
     labels = ["Qiskit", "PennyLane", "numpy", "scipy"]
     vals = [churn[p] for p in labels]
-    bcols = [C["quantum"], C["quantum_mid"], C["main"], C["main_soft"]]
+    bcols = [figstyle.PKG[p]["color"] for p in labels]
     ax.barh(range(len(labels)), vals, color=bcols, height=0.62, edgecolor="none")
     ax.set_yticks(range(len(labels)))
     ax.set_yticklabels(labels)
@@ -184,8 +182,7 @@ def corpus_components():
 def disclosure_components():
     qubits = read("qubit_counts.csv")
     fig, ax = new_component(FIG_DISCLOSURE, "qubits")
-    pcols = {"Qiskit": C["quantum"], "PennyLane": C["quantum_mid"],
-             "Cirq": C["quantum_soft"]}
+    pcols = {p: figstyle.PKG[p]["color"] for p in ("Qiskit", "PennyLane", "Cirq")}
     counts = {}
     for proj, col in pcols.items():
         vals = []
@@ -196,7 +193,18 @@ def disclosure_components():
         vals = np.sort(np.array(vals))
         counts[proj] = len(vals)
         ax.step(vals, np.arange(1, len(vals) + 1) / len(vals) * 100,
-                where="post", color=col, lw=1.2)
+                where="post", color=col, ls=figstyle.PKG[proj]["ls"], lw=1.3)
+    # Short line samples beside the deck's per-project labels, so the dash pattern
+    # identifies each curve. Axes fractions match the label rows in build_deck.
+    for proj, yf in (("Qiskit", figstyle.QUBIT_KEY_Y[0]),
+                     ("PennyLane", figstyle.QUBIT_KEY_Y[1]),
+                     ("Cirq", figstyle.QUBIT_KEY_Y[2])):
+        st = figstyle.PKG[proj]
+        # The deck places each label box with yf measured from the bottom of the
+        # plot area, which is where the text centre lands.
+        ax.plot([figstyle.QUBIT_KEY_X, figstyle.QUBIT_KEY_X + 0.065], [yf] * 2,
+                color=st["color"], ls=st["ls"], lw=1.3, transform=ax.transAxes,
+                clip_on=False)
     log_x(ax, si=False)
     ax.set_xlim(0.8, 400)
     ax.set_ylim(0, 103)
@@ -311,8 +319,8 @@ def task_components():
         ("bounties listed", total("bounties_listed")),
         ("issue closed", total("issue_closed")),
         ("closed by merged PR", total("closed_by_merged_pr")),
-        ("usable as a task", total("usable_as_task")),
-        ("test in the solution", total("solution_changes_tests")),
+        ("candidate tasks", total("usable_as_task")),
+        ("with test-file changes", total("solution_changes_tests")),
     ]
     fig, ax = new_component(FIG_TASKS, "funnel")
     ys = np.arange(len(stages))[::-1]
