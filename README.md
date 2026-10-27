@@ -1,12 +1,12 @@
 # ai4qoss
 
-AI for quantum open-source software: community standards, harness recipes, verification
-tools, and benchmarks.
+AI for quantum open-source software (QOSS): community standards, harness recipes,
+verification tools, and benchmarks.
 
-This repository accompanies a perspective paper in preparation by the quantum open-source
-software (QOSS) community; a link will be added when the preprint is posted. The paper is
-a fixed snapshot. This repository holds the parts that change: policies, tool catalogs,
-harness recipes, and data.
+This repository accompanies a perspective paper by Unitary Foundation and collaborators;
+a link will be added when the preprint is posted. The paper is a fixed snapshot. This
+repository holds the parts that change: policies, tool catalogs, harness recipes, and
+data.
 
 ## Layout
 
@@ -29,6 +29,7 @@ harness recipes, and data.
   [AI_use_this_repository.md](AI_use_this_repository.md) states how AI tools were used
   to produce it.
 - Releases are tagged and dated; the default branch carries the latest content.
+  Release v1.0.0 matches the data in the paper.
 
 ## Contributing
 
@@ -42,8 +43,9 @@ Per-directory maintainers may be listed here as the project grows.
 
 ## Citing
 
-Cite the repository as given under Attribution in [LICENSING.md](LICENSING.md).
-A BibTeX entry for the paper will go here once it is posted.
+Cite the repository as given in [CITATION.cff](CITATION.cff) or under Attribution in
+[LICENSING.md](LICENSING.md). A BibTeX entry for the paper will go here once it is
+posted.
 
 ## License
 

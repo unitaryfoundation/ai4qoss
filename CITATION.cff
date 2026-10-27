@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: ai4qoss
+abstract: "AI for quantum open-source software: community standards, harness recipes, verification tools, and benchmarks."
+type: software
+authors:
+  - name: Unitary Foundation
+version: 1.0.0
+date-released: 2026-10-27
+url: "https://github.com/unitaryfoundation/ai4qoss"
+repository-code: "https://github.com/unitaryfoundation/ai4qoss"
+license:
+  - CC-BY-4.0
+  - CC0-1.0
+  - Apache-2.0
