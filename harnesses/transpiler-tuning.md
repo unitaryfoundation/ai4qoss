@@ -1,6 +1,6 @@
 # Transpiler pass tuning
 
-Last verified: 2026-10-12
+Last verified: 2026-10-26
 Status: draft
 
 ## Task
@@ -85,12 +85,13 @@ comparing state vectors, which holds those tests to small circuits. In November 
 it opened an issue asking how to verify large compiled circuits, and attached a
 unitaryHACK bounty to it in May 2025
 ([ucc#62](https://github.com/unitaryfoundation/ucc/issues/62)). Over 26 comments a
-contributor tried QCEC, PyZX, and Giallar. QCEC did not finish a 100-qubit random
-Clifford circuit from ucc's tests within 24 hours on a 96-core machine, handled about 20
-qubits within an hour, and scaled worse than linearly above that; Giallar exhausted 64
-GB above 20 qubits; none of the three reached 50 qubits. The maintainers closed the
-issue in June 2025 and awarded the bounty for the search, writing that they had not been
-sure it would be possible. As of this writing ucc's tests still compare state vectors.
+contributor tried QCEC, PyZX, and Giallar. On a 96-core machine QCEC took more than an
+hour on a 100-qubit random Clifford circuit from ucc's tests, with a projected runtime
+well over 24 hours. It handled about 20 qubits within an hour and scaled worse than
+linearly above that; Giallar exhausted 64 GB above 20 qubits; none of the three reached
+50 qubits. The maintainers closed the issue in June 2025 and awarded the bounty for the
+search, writing that they had not been sure it would be possible. As of this writing
+ucc's tests still compare state vectors.
 
 Read that against the favorable case rather than as a verdict on QCEC. Random Clifford
 circuits are close to the adversarial input for an equivalence checker, while a

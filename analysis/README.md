@@ -5,7 +5,7 @@ The code behind every number in the perspective paper and every file in
 Scripts only, no data. Each script's docstring states its method, its denominators,
 and how it can be wrong.
 
-Last verified: 2026-10-25
+Last verified: 2026-10-26
 
 License: Apache-2.0 ([LICENSE](LICENSE)). Each script carries an SPDX header with
 the copyright, so it stays identifiable after being copied out.
@@ -48,7 +48,7 @@ was, how free text was classified.
 | `unitaryhack/bounties.py` | Bounties offered per year | `bounties_by_year.csv` |
 | `unitaryhack/surveys.py` | Survey questions comparable across years | survey tables |
 | `unitaryhack/ai_attitudes.py` | Topics raised in free-text answers about AI | `ai_attitudes.csv` |
-| `qoss_survey/run.py` | The community survey questions the paper uses | the three `survey_*.csv` |
+| `qoss_survey/run.py` | The community survey questions the paper uses | the four `survey_*.csv` |
 | `benchmark_pilot/resolve_bounties.py` | Each bounty's issue state and what closed it | task list |
 | `benchmark_pilot/link_solutions.py` | Second pass over issue timelines | task list |
 | `benchmark_pilot/link_graphql.py` | The issue-to-pull-request link, which only GraphQL gives | task list |

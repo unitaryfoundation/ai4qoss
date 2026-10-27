@@ -21,7 +21,8 @@ category: 127 of the 162 who chose automation verification also chose automated 
 so the split reflects the wording of the instrument rather than a difference in what
 respondents do.
 
-Output: out/survey_tasks.csv, out/survey_agreement.csv, out/survey_verification.csv
+Output: out/survey_ai_use.csv, out/survey_tasks.csv, out/survey_agreement.csv,
+out/survey_verification.csv
 """
 import csv
 from pathlib import Path
@@ -37,6 +38,8 @@ SRC = private("26SurveyData_All_261026/CSV/2026 Quantum Open Source Software Sur
 OUT = out("qoss_survey")
 
 RQ_FLAG = 9          # SurveyMonkey's poor-quality flag, "1.0" when set
+
+AI_USE = 493         # Q53, "Are you using AI Tools for quantum tasks?", Yes or No
 
 TASKS = [            # first column of each task's manual / with-AI / N/A triple
     ("Discovering & summarizing research papers (e.g., arXiv)", 505),
@@ -69,6 +72,14 @@ def pct(n, d):
 
 head, choices, rows = load()
 ticked = lambda row, i: bool(row[i].strip())
+
+# ------------------------------------------------------- Q53, AI use for quantum tasks
+use = [r[AI_USE].strip() for r in rows if r[AI_USE].strip()]
+with open(OUT / "survey_ai_use.csv", "w", newline="") as f:
+    w = csv.writer(f)
+    w.writerow(["answer", "responses", "answered", "percent_of_answered"])
+    for a in ("Yes", "No"):
+        w.writerow([a, use.count(a), len(use), pct(use.count(a), len(use))])
 
 # ----------------------------------------------------------------- workflow tasks
 with open(OUT / "survey_tasks.csv", "w", newline="") as f:
@@ -117,8 +128,9 @@ print(f"{len(rows)} respondents, {len(answered)} answered the verification quest
 
 
 def shares(rs):
-    """Every share the three files publish, recomputed on a subset of respondents."""
-    out = []
+    """Every share the four files publish, recomputed on a subset of respondents."""
+    use = [r[AI_USE].strip() for r in rs if r[AI_USE].strip()]
+    out = [100 * use.count("Yes") / len(use)]
     for _, i in TASKS:
         d = sum(1 for r in rs if ticked(r, i) or ticked(r, i + 1))
         out += [100 * sum(ticked(r, i + k) for r in rs) / d for k in (0, 1)]
@@ -140,4 +152,5 @@ both = sum(1 for r in answered if ticked(r, 526) and ticked(r, 527))
 only_v = sum(1 for r in answered if not ticked(r, 526) and ticked(r, 527))
 print(f"automated tests and automation verification: {both} chose both, {only_v} chose "
       f"automation verification alone")
-print(f"wrote {OUT}/survey_tasks.csv, survey_verification.csv, survey_agreement.csv")
+print(f"wrote {OUT}/survey_ai_use.csv, survey_tasks.csv, survey_verification.csv, "
+      f"survey_agreement.csv")

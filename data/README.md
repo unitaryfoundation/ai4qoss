@@ -31,7 +31,7 @@ the only record of it. "Measured" is when the script last ran against its source
 | `task_pipeline_by_year.csv`, `task_solution_size.csv` | 2026-10-06 | the 2022 to 2026 unitaryHACK events, re-resolved on that date for the bounties still open in August, which moved one more bounty into the usable set |
 | `bounties_by_year.csv` | 2026-08-23 | the 2022 to 2026 events, all concluded |
 | `ai_attitudes.csv` | 2026-08-23 | the 2026 post-event surveys, closed |
-| the three `survey_*.csv` | 2026-10-26 | a 2026-10-26 snapshot of a survey still collecting responses |
+| the four `survey_*.csv` | 2026-10-26 | a 2026-10-26 snapshot of a survey still collecting responses |
 
 Three files were not part of the October re-measurement. For `bounties_by_year.csv` and
 `ai_attitudes.csv` that changes nothing, because both describe events that had already
@@ -80,13 +80,15 @@ first 100 files of each reference pull request, which gives 275.
 
 | File | Contents |
 |---|---|
+| `survey_ai_use.csv` | Whether respondents use AI tools for quantum tasks |
 | `survey_tasks.csv` | How respondents perform each task in their quantum workflow, manually or with AI assistance |
 | `survey_verification.csv` | How respondents who use AI to write or debug code verify that the result is correct |
 | `survey_agreement.csv` | Agreement with three statements about the accuracy and usefulness of AI assistants |
 
-These are the three questions behind the figure panels and nothing else from that
-survey. They come from the 2026 Quantum Open Source Software Survey run by the Unitary
-Foundation, as a snapshot taken on 2026-10-26 while collection was still open. The
+These are the four questions the paper uses, the AI-use question in its summary table and
+the three behind the figure panels, and nothing else from that survey. They come from
+the 2026 Quantum Open Source Software Survey run by the Unitary Foundation, as a
+snapshot taken on 2026-10-26 while collection was still open. The
 survey was announced to run through 29 October 2026 and the Foundation publishes its own
 summary of the full results, so these counts are a mid-collection cut rather than the
 final ones.
@@ -134,7 +136,7 @@ repositories and pull requests; it is replaced by the two aggregate files above.
 maintainers and 16 contributors and no response text; free-text answers are not published
 in any form. The underlying responses stay with the organizers.
 
-The three `survey_*.csv` files are counts over respondents to the community survey. They
+The four `survey_*.csv` files are counts over respondents to the community survey. They
 carry no response text and no respondent attribute, so no answer can be traced to a
 person. Free-text answers to that survey are not published here in any form.
 

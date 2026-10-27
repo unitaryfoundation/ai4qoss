@@ -27,6 +27,5 @@ community. This project follows the
 
 ## Process
 
-Open an issue for discussion, or a pull request directly for small changes. Maintainers
-for each directory are listed in the top-level README; they review within the disclosure
-rules above.
+Open an issue for discussion, or a pull request directly for small changes. The
+maintainers named in the top-level README review within the disclosure rules above.
