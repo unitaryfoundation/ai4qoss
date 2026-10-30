@@ -137,6 +137,14 @@ Last verified: 2026-10-19
   one. Seven of eight tasks lower both Toffoli and qubit counts against the state of
   the art; the eighth finds a new reversible architecture for prime-field modular
   inversion.
+ - Validated verifiers for agentic circuit optimization,
+  [arXiv:2610.31352](https://arxiv.org/abs/2610.31352). Crichigno and Flammia
+  (Phasecraft and Virginia Tech) have an agent build each problem's exact verifier
+  with a researcher and validate it against an analytically solved case, deliberately
+  broken solutions and published results before it is frozen and opened to competing
+  agents. Applied to fermion-to-qubit encoding, Hamiltonian layout and unitary
+  synthesis; the fermionic encodings outperform a state-of-the-art optimizer. Every
+  accepted result is a program with the agent's notes.
 - Meta-designing quantum experiments, Arlt et al., [Nat. Mach. Intell. 8, 148
   (2026)](https://doi.org/10.1038/s42256-025-01153-0). A transformer trained on
   millions of synthetic states and their blueprints writes human-readable Python that
