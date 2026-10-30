@@ -3,10 +3,10 @@
 AI for quantum open-source software (QOSS): community standards, harness recipes,
 verification tools, and benchmarks.
 
-This repository accompanies a perspective paper by Unitary Foundation and collaborators;
-a link will be added when the preprint is posted. The paper is a fixed snapshot. This
-repository holds the parts that change: policies, tool catalogs, harness recipes, and
-data.
+This repository accompanies a perspective paper by Unitary Foundation and collaborators,
+[arXiv:2610.38049](https://arxiv.org/abs/2610.38049). The paper is a fixed snapshot.
+This repository holds the parts that change: policies, tool catalogs, harness recipes,
+and data.
 
 ## Layout
 
@@ -43,9 +43,24 @@ Per-directory maintainers may be listed here as the project grows.
 
 ## Citing
 
-Cite the repository as given in [CITATION.cff](CITATION.cff) or under Attribution in
-[LICENSING.md](LICENSING.md). A BibTeX entry for the paper will go here once it is
-posted.
+Cite the paper:
+
+```bibtex
+@misc{Li2026Perspective,
+  title         = {Perspective on {AI} and quantum open-source software},
+  author        = {Li, Changhao and Chase, Bradley A. and Vijayakumar, Veena and
+                   Rennela, Mathys and Cosentino, Alessandro and Guo, Naixu and
+                   Hassinger, Sebastian and Labib, Farrokh and Omonije, Seun and
+                   Rebentrost, Patrick and Russo, Vincent and Shammah, Nathan and
+                   Zeng, William J. and Castanon, Ben},
+  year          = {2026},
+  eprint        = {2610.38049},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph}
+}
+```
+
+To cite the repository itself, use the Attribution in [LICENSING.md](LICENSING.md).
 
 ## License
 
